@@ -1,0 +1,23 @@
+{
+    "asset": "2c111931762ffdf4590b23a10a7c3c67",
+    "fileName": "019ead08-87a8-7e67-8b74-3fe98234216c.glb",
+    "prompt": "A stylized cartoon white ceramic toilet, smooth rounded low-poly game asset, cute cafe interior style",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "3664fd53012d82447a41315f5d7006c2",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}

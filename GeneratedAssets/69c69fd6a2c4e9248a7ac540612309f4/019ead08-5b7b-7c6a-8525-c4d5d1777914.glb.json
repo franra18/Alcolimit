@@ -1,0 +1,23 @@
+{
+    "asset": "69c69fd6a2c4e9248a7ac540612309f4",
+    "fileName": "019ead08-5b7b-7c6a-8525-c4d5d1777914.glb",
+    "prompt": "A stylized cartoon white ceramic pedestal sink with chrome faucet, smooth rounded low-poly game asset, cute cafe interior style",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "f60f1c35fe2b4b64994451848640d614",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}
