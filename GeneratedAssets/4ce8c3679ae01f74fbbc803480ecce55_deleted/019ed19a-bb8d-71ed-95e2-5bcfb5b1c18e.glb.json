@@ -1,0 +1,23 @@
+{
+    "asset": "4ce8c3679ae01f74fbbc803480ecce55",
+    "fileName": "019ed19a-bb8d-71ed-95e2-5bcfb5b1c18e.glb",
+    "prompt": "A stylized cartoon low-poly whiskey bottle, matching the hand-painted 3D props in the bar, game-ready model",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "c2549e541b4b5ce4b903e5fb9de9bd44",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}

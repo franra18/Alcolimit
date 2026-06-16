@@ -1,0 +1,31 @@
+{
+    "asset": "c2549e541b4b5ce4b903e5fb9de9bd44",
+    "fileName": "019ed198-123f-7faa-820a-09b034d34d38.png",
+    "prompt": "A single, stylized cartoon low-poly whiskey bottle, vibrant colors, clean design, matching the hand-painted low-poly aesthetic of the cafe bar props, isolated on a solid gray background",
+    "negativePrompt": "",
+    "model": "gemini-3.1-flash",
+    "modelName": "Gemini 3.1 Nano Banana 2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0,
+    "dynamicParams": {
+        "serializedData": []
+    }
+}

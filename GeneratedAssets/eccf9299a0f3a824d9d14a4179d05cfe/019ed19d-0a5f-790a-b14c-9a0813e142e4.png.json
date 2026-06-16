@@ -1,0 +1,31 @@
+{
+    "asset": "eccf9299a0f3a824d9d14a4179d05cfe",
+    "fileName": "019ed19d-0a5f-790a-b14c-9a0813e142e4.png",
+    "prompt": "A single ultra low-poly 3D whiskey bottle icon, flat shaded, minimal polygons, solid even colors, extremely simple design, clean geometric edges, cartoon flat styling, isolated on a solid gray background",
+    "negativePrompt": "",
+    "model": "gemini-3.1-flash",
+    "modelName": "Gemini 3.1 Nano Banana 2",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0,
+    "dynamicParams": {
+        "serializedData": []
+    }
+}

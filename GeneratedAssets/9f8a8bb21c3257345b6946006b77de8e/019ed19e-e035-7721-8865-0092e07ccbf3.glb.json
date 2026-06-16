@@ -1,0 +1,23 @@
+{
+    "asset": "9f8a8bb21c3257345b6946006b77de8e",
+    "fileName": "019ed19e-e035-7721-8865-0092e07ccbf3.glb",
+    "prompt": "An ultra low-poly stylized 3D whiskey bottle, blocky cartoon aesthetic, minimal polygons, flat solid even colors, extremely simple design, clean geometric shape, game-ready low poly asset",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "eccf9299a0f3a824d9d14a4179d05cfe",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}
