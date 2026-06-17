@@ -2,7 +2,6 @@
 ## Asignación de tareas
 
 **Fran**
-- Añadir pista de baile al bar
 - Pensar como se van a esconder las bebidas
 - Agregar la interacción con las bebidas (molaría pedirle a la IA una animación; sino, sonido de beber + eructo y que no se pueda mover)
 - Crear menú de inicio
