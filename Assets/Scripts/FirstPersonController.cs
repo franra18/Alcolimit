@@ -67,7 +67,7 @@ public class FirstPersonController : MonoBehaviour
         float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f); // Evita dar volteretas con la cámara
+        xRotation = Mathf.Clamp(xRotation, -90f, 80f); // Evita dar volteretas con la cámara
 
         // Rota la cámara arriba/abajo
         cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
@@ -88,11 +88,15 @@ public class FirstPersonController : MonoBehaviour
 
         controller.Move(move * moveSpeed * Time.deltaTime);
 
-        // Sincronización con el Animator de la imagen
+        // Sincronización suavizada con el Animator
         if (animator != null)
         {
-            animator.SetFloat("Hor", moveInput.x);
-            animator.SetFloat("Vert", moveInput.y);
+            // Interpola el valor actual hacia el input objetivo (el 10f es la velocidad de transición)
+            float smoothHor = Mathf.Lerp(animator.GetFloat("Hor"), moveInput.x, Time.deltaTime * 10f);
+            float smoothVert = Mathf.Lerp(animator.GetFloat("Vert"), moveInput.y, Time.deltaTime * 10f);
+
+            animator.SetFloat("Hor", smoothHor);
+            animator.SetFloat("Vert", smoothVert);
         }
     }
 

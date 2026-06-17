@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Board_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5639216847247514633, guid: 3e8ed16e677edfb459ca7b7ffb545304, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -657,7 +661,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &13547625
 Transform:
@@ -693,7 +697,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &20570677
 Transform:
@@ -838,6 +842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -925,7 +933,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &27447271
 Transform:
@@ -1150,6 +1158,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Plant_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1489,6 +1501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Upper_Back_2
       objectReference: {fileID: 0}
+    - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1550,6 +1566,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1613,6 +1633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Flower_3
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1634,6 +1658,10 @@ PrefabInstance:
     - target: {fileID: 8194081427618432757, guid: 7687942f44828ae41b9b4ec445cd7187, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Bean_Sign_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194081427618432757, guid: 7687942f44828ae41b9b4ec445cd7187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8862214389128944719, guid: 7687942f44828ae41b9b4ec445cd7187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1733,6 +1761,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1936,6 +1968,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2270,6 +2306,10 @@ PrefabInstance:
     - target: {fileID: 1967674582170259659, guid: 45749487ebe5d4a469e2a26e10808b5c, type: 3}
       propertyPath: m_Name
       value: Storage_Box_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967674582170259659, guid: 45749487ebe5d4a469e2a26e10808b5c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2700,6 +2740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2897,6 +2941,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3312,6 +3360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5500002
@@ -3575,6 +3627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3701,7 +3757,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &110166767
 Transform:
@@ -3944,6 +4000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -4043,7 +4103,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &115008908
 Transform:
@@ -4247,7 +4307,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &123098230
 Transform:
@@ -4326,6 +4386,10 @@ PrefabInstance:
     - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4516,6 +4580,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4710,7 +4778,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &135167420
 Transform:
@@ -4775,6 +4843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -4836,6 +4908,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4935,7 +5011,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &142592897
 Transform:
@@ -5044,7 +5120,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &145242681
 Transform:
@@ -5117,6 +5193,10 @@ PrefabInstance:
     - target: {fileID: 5216124050211755151, guid: cdafbb26fbd1fa94eb823bd8798e9536, type: 3}
       propertyPath: m_Name
       value: Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216124050211755151, guid: cdafbb26fbd1fa94eb823bd8798e9536, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5579,6 +5659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5663,6 +5747,10 @@ PrefabInstance:
     - target: {fileID: 4857611856465497357, guid: 288dd58dbcd034448af410848148ea1e, type: 3}
       propertyPath: m_Name
       value: Cabinet_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857611856465497357, guid: 288dd58dbcd034448af410848148ea1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5197827505480423351, guid: 288dd58dbcd034448af410848148ea1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5797,6 +5885,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6283,6 +6375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillow_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6310,7 +6406,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &174520802
 Transform:
@@ -6489,6 +6585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6510,6 +6610,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Upper_Plant_2C
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6709,6 +6813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.75
@@ -6773,7 +6881,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &181298457
 Transform:
@@ -6894,6 +7002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Flower_4
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7009,6 +7121,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7343,6 +7459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7534,7 +7654,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &205884497
 Transform:
@@ -7713,6 +7833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7869,7 +7993,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &210284134
 Transform:
@@ -7902,6 +8026,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_2B
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8675,6 +8803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9265,6 +9397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23999977
@@ -9361,7 +9497,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &238275762
 Transform:
@@ -9440,6 +9576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9493,6 +9633,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9590,7 +9734,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &244432413
 Transform:
@@ -9927,6 +10071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10152,7 +10300,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &256449391
 Transform:
@@ -10261,7 +10409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &259798130
 Transform:
@@ -10428,6 +10576,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11056,6 +11208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11118,6 +11274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11139,6 +11299,10 @@ PrefabInstance:
     - target: {fileID: 7001572663521343547, guid: 73138ca6ad9eb794abb9e2128fb47ea3, type: 3}
       propertyPath: m_Name
       value: Cafe_Cookie_Stand_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001572663521343547, guid: 73138ca6ad9eb794abb9e2128fb47ea3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7665484531125068417, guid: 73138ca6ad9eb794abb9e2128fb47ea3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11306,6 +11470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11422,6 +11590,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11850,6 +12022,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12560,6 +12736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12613,6 +12793,10 @@ PrefabInstance:
     - target: {fileID: 1566978063473202252, guid: 72ca7aeda21ec674b9bfb91123d0e263, type: 3}
       propertyPath: m_Name
       value: Cashier_Mouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566978063473202252, guid: 72ca7aeda21ec674b9bfb91123d0e263, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2230643644561755894, guid: 72ca7aeda21ec674b9bfb91123d0e263, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12846,7 +13030,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &328872013
 Transform:
@@ -13389,6 +13573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cafe_Cash_Register_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6641815192814609977, guid: 8b24fa8284a133048a6f7a6c4d6e5baf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13450,6 +13638,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13880,6 +14072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14194,7 +14390,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &368728452
 Transform:
@@ -14227,6 +14423,10 @@ PrefabInstance:
     - target: {fileID: 541426855329018148, guid: 83c9be3c10f12e1489ec3b0abe1fb162, type: 3}
       propertyPath: m_Name
       value: Cafe_Chemex_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 541426855329018148, guid: 83c9be3c10f12e1489ec3b0abe1fb162, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 921083394825022366, guid: 83c9be3c10f12e1489ec3b0abe1fb162, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15348,6 +15548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15759,6 +15963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23999977
@@ -15852,6 +16060,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16178,6 +16390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16338,7 +16554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &425430831
 Transform:
@@ -16579,6 +16795,10 @@ PrefabInstance:
     - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
       propertyPath: m_Name
       value: Painting_Lower_Right_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17272,6 +17492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17363,7 +17587,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &450217141
 Transform:
@@ -17470,6 +17694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1500001
@@ -17520,6 +17748,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
   m_PrefabInstance: {fileID: 451497946}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &456282762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456282763}
+  m_Layer: 0
+  m_Name: NavMeshManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456282763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456282762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.91588, y: 3, z: -2.71969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1195518381}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466513081
 GameObject:
   m_ObjectHideFlags: 0
@@ -17823,6 +18083,8 @@ GameObject:
   m_Component:
   - component: {fileID: 469737867}
   - component: {fileID: 469737868}
+  - component: {fileID: 469737870}
+  - component: {fileID: 469737869}
   m_Layer: 0
   m_Name: Character_15_Vacationer
   m_TagString: Untagged
@@ -17839,7 +18101,7 @@ Transform:
   m_GameObject: {fileID: 469737866}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  m_LocalPosition: {x: 7, y: 0, z: 3.5}
+  m_LocalPosition: {x: 4.56, y: 0, z: 10.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17855,7 +18117,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469737866}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: ffb21f0d1dfb40158559b32459459762, type: 3}
   m_Controller: {fileID: 9100000, guid: 3f9995eb84f84691b9c0e8d1859be3d0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -17868,6 +18130,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &469737869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469737866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d5655353ddfc544b2ca38f4e1c06f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCMovimiento
+  radioDePaseo: 10
+  tiempoEntrePaseos: 4
+--- !u!195 &469737870
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469737866}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.3
+  m_Speed: 2.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &472036501
 GameObject:
   m_ObjectHideFlags: 0
@@ -17952,6 +18250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18014,6 +18316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Lower_Right_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18075,6 +18381,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18200,6 +18510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18253,6 +18567,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18379,6 +18697,10 @@ PrefabInstance:
     - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_Name
       value: Cafe_Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18608,6 +18930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18629,6 +18955,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18694,7 +19024,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &501009089
 Transform:
@@ -18767,6 +19097,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18893,6 +19227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18954,6 +19292,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19153,6 +19495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Lower_Left_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1834836625243515834, guid: 17c228da09c5c4544a490fd937ad3a13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19177,7 +19523,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &510538557
 Transform:
@@ -19251,6 +19597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19272,6 +19622,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19334,6 +19688,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19437,6 +19795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19458,6 +19820,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19969,6 +20335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20031,6 +20401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Lower_Back_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1834836625243515834, guid: 17c228da09c5c4544a490fd937ad3a13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20086,6 +20460,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20220,6 +20598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20275,6 +20657,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20337,6 +20723,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20440,6 +20830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20530,7 +20924,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &527928277
 Transform:
@@ -20676,6 +21070,10 @@ PrefabInstance:
     - target: {fileID: 5749983077866714456, guid: 60ccb05ead519d74c8cc0d49a0868bd2, type: 3}
       propertyPath: m_Name
       value: Painting_Upper_Back_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749983077866714456, guid: 60ccb05ead519d74c8cc0d49a0868bd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20875,6 +21273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20936,6 +21338,10 @@ PrefabInstance:
     - target: {fileID: 1834836625243515834, guid: 17c228da09c5c4544a490fd937ad3a13, type: 3}
       propertyPath: m_Name
       value: Painting_Upper_Left_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834836625243515834, guid: 17c228da09c5c4544a490fd937ad3a13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21158,6 +21564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21219,6 +21629,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21523,6 +21937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Flower_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21585,6 +22003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21612,7 +22034,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &561181959
 Transform:
@@ -21750,6 +22172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.28
@@ -21851,6 +22277,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22012,7 +22442,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &562696289
 Transform:
@@ -22085,6 +22515,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22241,6 +22675,10 @@ PrefabInstance:
     - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22704,6 +23142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.099999905
@@ -22837,6 +23279,10 @@ PrefabInstance:
     - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
       propertyPath: m_Name
       value: Cafe_Cabinet_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23100,6 +23546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23225,6 +23675,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23440,6 +23894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Upper_Plant_2A
       objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.3
@@ -23534,6 +23992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23999977
@@ -23595,6 +24057,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23726,7 +24192,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &605854744
 Transform:
@@ -23870,7 +24336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &609332919
 Transform:
@@ -24007,6 +24473,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24245,6 +24715,10 @@ PrefabInstance:
     - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
       propertyPath: m_Name
       value: Floor_Flower_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24541,6 +25015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Storage_Box_A
       objectReference: {fileID: 0}
+    - target: {fileID: 1967674582170259659, guid: 45749487ebe5d4a469e2a26e10808b5c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24594,6 +25072,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24959,6 +25441,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26077,6 +26563,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bathroom_Toilet
       objectReference: {fileID: 0}
+    - target: {fileID: 773569699832443847, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961462724644735612, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178153980813204130, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5266672411322847349, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -26363,6 +26861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26489,6 +26991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26580,7 +27086,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &689471374
 Transform:
@@ -26689,7 +27195,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &691644986
 Transform:
@@ -26722,6 +27228,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26784,6 +27294,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26971,6 +27485,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27601,6 +28119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.239
@@ -27662,6 +28184,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_2A
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27860,6 +28386,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28082,6 +28612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -28143,6 +28677,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28904,6 +29442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29029,6 +29571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29123,6 +29669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29176,6 +29726,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29278,6 +29832,10 @@ PrefabInstance:
     - target: {fileID: 7999656253645748683, guid: f203a2dbd06e82e408f3dd9ba7833d29, type: 3}
       propertyPath: m_Name
       value: Couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 7999656253645748683, guid: f203a2dbd06e82e408f3dd9ba7833d29, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29942,6 +30500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30222,6 +30784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -30418,6 +30984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30439,6 +31009,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31069,6 +31643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31122,6 +31700,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31224,6 +31806,10 @@ PrefabInstance:
     - target: {fileID: 1094951735131250708, guid: 9461777cb8291244a9430141b75376b1, type: 3}
       propertyPath: m_Name
       value: Cabinet_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094951735131250708, guid: 9461777cb8291244a9430141b75376b1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31420,6 +32006,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31827,6 +32417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9000001
@@ -31959,6 +32553,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32244,6 +32842,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32659,6 +33261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -33013,6 +33619,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Upper_Plant_1B
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33587,6 +34197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Lower_Right_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5749983077866714456, guid: 60ccb05ead519d74c8cc0d49a0868bd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33608,6 +34222,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33673,7 +34291,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &889809113
 Transform:
@@ -34126,6 +34744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34179,6 +34801,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34752,6 +35378,10 @@ PrefabInstance:
     - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
       propertyPath: m_Name
       value: Pillow_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35437,6 +36067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2
@@ -35726,6 +36360,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36162,7 +36800,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &950647025
 Transform:
@@ -36308,6 +36946,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36666,6 +37308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5999999
@@ -36768,6 +37414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vinyl_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5312235095817008196, guid: 40f7c93fed58e2240868fcc9d81787fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36792,7 +37442,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &965831015
 Transform:
@@ -36939,6 +37589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 5341273974346770214, guid: 8bd1951f7971c27499cee62c2501adab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36992,6 +37646,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37161,6 +37819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37213,6 +37875,10 @@ PrefabInstance:
     - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_2C
+      objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37315,6 +37981,10 @@ PrefabInstance:
     - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
       propertyPath: m_Name
       value: Pillow_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37504,6 +38174,10 @@ PrefabInstance:
     - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38057,7 +38731,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &987427815
 Transform:
@@ -38166,7 +38840,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &987927926
 Transform:
@@ -38254,6 +38928,10 @@ PrefabInstance:
     - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39081,6 +39759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39174,6 +39856,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39410,6 +40096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39437,7 +40127,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1016107518
 Transform:
@@ -39613,7 +40303,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1019549754
 Transform:
@@ -39751,6 +40441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vinyl_Record
       objectReference: {fileID: 0}
+    - target: {fileID: 2368901788415406592, guid: f0a4a3295e9f5db448b6e04347ab6da9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3146845214358497466, guid: f0a4a3295e9f5db448b6e04347ab6da9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
@@ -39853,6 +40547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39914,6 +40612,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40144,6 +40846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40333,6 +41039,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40664,7 +41374,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1042388680
 Transform:
@@ -40874,6 +41584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40935,6 +41649,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41138,6 +41856,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41575,7 +42297,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1081357833
 Transform:
@@ -41684,7 +42406,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1083749624
 Transform:
@@ -41766,6 +42488,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42093,7 +42819,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1098927365
 Transform:
@@ -42367,6 +43093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42426,7 +43156,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1112852291
 Transform:
@@ -42532,6 +43262,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42824,6 +43558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42845,6 +43583,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42948,6 +43690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillow_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5194354894174225133, guid: 116891f65b497384db831992a3b64241, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43010,6 +43756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43031,6 +43781,10 @@ PrefabInstance:
     - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_Name
       value: Cafe_Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43093,6 +43847,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43196,6 +43954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43258,6 +44020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43285,7 +44051,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1134243390
 Transform:
@@ -43812,6 +44578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0500002
@@ -44071,6 +44841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Lower_Left_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5749983077866714456, guid: 60ccb05ead519d74c8cc0d49a0868bd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44132,6 +44906,10 @@ PrefabInstance:
     - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
       propertyPath: m_Name
       value: Upper_Flower_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44217,6 +44995,10 @@ PrefabInstance:
     - target: {fileID: 7248225253176770852, guid: 11baf85d76fc07e47ab0be87f9bdd1e9, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Machine_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248225253176770852, guid: 11baf85d76fc07e47ab0be87f9bdd1e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8060615244259416990, guid: 11baf85d76fc07e47ab0be87f9bdd1e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44350,6 +45132,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44613,6 +45399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Storage_Box_B
       objectReference: {fileID: 0}
+    - target: {fileID: 2176255894448548762, guid: 318e9a0b0b3e1ba47b261823de4c59dc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44764,7 +45554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1194876428
 Transform:
@@ -44786,6 +45576,70 @@ Transform:
   - {fileID: 693646449}
   m_Father: {fileID: 2068526665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1195518380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195518381}
+  - component: {fileID: 1195518382}
+  m_Layer: 0
+  m_Name: NavMesh Surface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195518381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195518380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 456282763}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195518382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195518380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.1
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 336212bfbf9ee844e99ccc16855de9da, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1196700664
 GameObject:
   m_ObjectHideFlags: 0
@@ -44896,7 +45750,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1201706723
 Transform:
@@ -45111,7 +45965,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1208086802
 Transform:
@@ -45145,7 +45999,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1210060753
 Transform:
@@ -45174,6 +46028,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45373,6 +46231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0999999
@@ -45498,6 +46360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bathroom_Sink
       objectReference: {fileID: 0}
+    - target: {fileID: 922119455542052807, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4400268332703985007, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -45553,6 +46419,14 @@ PrefabInstance:
     - target: {fileID: 4400268332703985007, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124796978277780162, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612852128026791745, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45630,6 +46504,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45764,6 +46642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting_Upper_Back_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1834836625243515834, guid: 17c228da09c5c4544a490fd937ad3a13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45890,6 +46772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45952,6 +46838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45979,7 +46869,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1236537010
 Transform:
@@ -46181,6 +47071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.23999977
@@ -46248,7 +47142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1239059025
 Transform:
@@ -46354,6 +47248,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46793,6 +47691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Upper_Flower_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46918,6 +47820,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47270,7 +48176,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1269505435
 Transform:
@@ -47385,6 +48291,10 @@ PrefabInstance:
     - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
       propertyPath: m_Name
       value: Painting_Upper_Right_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47544,6 +48454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47683,6 +48597,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47873,7 +48791,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1289914268
 Transform:
@@ -48011,6 +48929,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48192,7 +49114,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1307008020
 Transform:
@@ -48301,6 +49223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48322,6 +49248,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48515,7 +49445,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1318135573
 Transform:
@@ -48885,6 +49815,10 @@ PrefabInstance:
     - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_Name
       value: Cafe_Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49834,6 +50768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -49935,6 +50873,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50094,6 +51036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plant_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.3
@@ -50195,6 +51141,10 @@ PrefabInstance:
     - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50409,6 +51359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -50510,6 +51464,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50660,6 +51618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0999999
@@ -50752,6 +51714,10 @@ PrefabInstance:
     - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_Name
       value: Cafe_Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50917,6 +51883,10 @@ PrefabInstance:
     - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51134,6 +52104,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51499,6 +52473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Couch
       objectReference: {fileID: 0}
+    - target: {fileID: 7999656253645748683, guid: f203a2dbd06e82e408f3dd9ba7833d29, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51618,7 +52596,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1388896363
 Transform:
@@ -51657,7 +52635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1388936710
 Transform:
@@ -52039,6 +53017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Shelf_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7781292293044183584, guid: 8a101a195e5fbc949bb922e87777de78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52100,6 +53082,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52163,6 +53149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52225,6 +53215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52286,6 +53280,10 @@ PrefabInstance:
     - target: {fileID: 5341273974346770214, guid: 8bd1951f7971c27499cee62c2501adab, type: 3}
       propertyPath: m_Name
       value: Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341273974346770214, guid: 8bd1951f7971c27499cee62c2501adab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52381,6 +53379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 5341273974346770214, guid: 8bd1951f7971c27499cee62c2501adab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52442,6 +53444,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52532,6 +53538,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53067,6 +54077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -53128,6 +54142,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53357,6 +54375,10 @@ PrefabInstance:
     - target: {fileID: 3734611379897310439, guid: d9c9480afa265d94896e13edc024af89, type: 3}
       propertyPath: m_Name
       value: Cashier_Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734611379897310439, guid: d9c9480afa265d94896e13edc024af89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4080210616048502365, guid: d9c9480afa265d94896e13edc024af89, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53772,6 +54794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53996,6 +55022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vinyl_Record_Main
       objectReference: {fileID: 0}
+    - target: {fileID: 2368901788415406592, guid: f0a4a3295e9f5db448b6e04347ab6da9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3146845214358497466, guid: f0a4a3295e9f5db448b6e04347ab6da9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5
@@ -54089,6 +55119,10 @@ PrefabInstance:
     - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54191,6 +55225,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54477,7 +55515,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1455918794
 Transform:
@@ -54623,6 +55661,10 @@ PrefabInstance:
     - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54824,7 +55866,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460330932}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 6114640f2b09430f94382e9f9b4d35d8, type: 3}
   m_Controller: {fileID: 9100000, guid: 3f9995eb84f84691b9c0e8d1859be3d0, type: 2}
   m_CullingMode: 1
@@ -54944,6 +55986,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55477,6 +56523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55564,6 +56614,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55803,6 +56857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56030,6 +57088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6999998
@@ -56131,6 +57193,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56634,6 +57700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56690,7 +57760,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1519796566
 Transform:
@@ -56758,7 +57828,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1520772200
 Transform:
@@ -56935,6 +58005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56987,6 +58061,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57186,6 +58264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -57325,6 +58407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57450,6 +58536,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57672,6 +58762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6
@@ -57800,6 +58894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.27999973
@@ -57861,6 +58959,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58123,6 +59225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Upper_Plant_2B
       objectReference: {fileID: 0}
+    - target: {fileID: 111561172033434090, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 776739990346869584, guid: 4d478b3e457db504e9c007a5c703e276, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -58184,6 +59290,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58422,7 +59532,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1563143171
 Transform:
@@ -58771,7 +59881,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1573537667
 Transform:
@@ -58880,7 +59990,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1574196816
 Transform:
@@ -58952,6 +60062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58979,7 +60093,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1578018727
 Transform:
@@ -59117,6 +60231,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59937,6 +61055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -60155,6 +61277,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60625,6 +61751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -60862,6 +61992,10 @@ PrefabInstance:
     - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61178,6 +62312,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61882,6 +63020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62104,6 +63246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5760936180065619209, guid: 5a6a172540c46b74790c5a972f7fccfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62125,6 +63271,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62187,6 +63337,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62255,7 +63409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1688567123
 Transform:
@@ -62574,6 +63728,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62970,6 +64128,10 @@ PrefabInstance:
     - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
       propertyPath: m_Name
       value: Upper_Flower_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63396,7 +64558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1713836232
 Transform:
@@ -63543,6 +64705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cashier_Keyboard
       objectReference: {fileID: 0}
+    - target: {fileID: 1072583938251779072, guid: 636cd0f57c70ba442aebc84eb12e10b2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63633,6 +64799,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63760,6 +64930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.24
@@ -63821,6 +64995,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63924,6 +65102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63986,6 +65168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table
       objectReference: {fileID: 0}
+    - target: {fileID: 6878895662338868841, guid: 1e5e97974a99ac04381a0ae753c6fd6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64007,6 +65193,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_1D
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64239,7 +65429,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1739588130
 Transform:
@@ -64344,6 +65534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2062169480744830951, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64431,6 +65625,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_1C
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64560,7 +65758,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1757060790
 Transform:
@@ -64633,6 +65831,10 @@ PrefabInstance:
     - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
       propertyPath: m_Name
       value: Painting_Lower_Back_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 861603208260271501, guid: 6d06567a1e0a73f43b1b6e3365013faa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64832,6 +66034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 5341273974346770214, guid: 8bd1951f7971c27499cee62c2501adab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64893,6 +66099,10 @@ PrefabInstance:
     - target: {fileID: 6878895662338868841, guid: 1e5e97974a99ac04381a0ae753c6fd6f, type: 3}
       propertyPath: m_Name
       value: Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878895662338868841, guid: 1e5e97974a99ac04381a0ae753c6fd6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64985,7 +66195,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &1764772189
 Transform:
@@ -65091,6 +66301,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65292,7 +66506,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1767291503
 Transform:
@@ -65536,6 +66750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65560,7 +66778,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1773401105
 Transform:
@@ -65592,6 +66810,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Floor_Plant_1A
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66226,6 +67448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66440,6 +67666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4499998
@@ -66539,7 +67769,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1817082850
 Transform:
@@ -66648,7 +67878,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1818129104
 Transform:
@@ -66721,6 +67951,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67183,6 +68417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05000019
@@ -67380,6 +68618,10 @@ PrefabInstance:
     - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461932098240678800, guid: 27210448516e9104aaba8d805a594af5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67636,6 +68878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4808181665121915589, guid: b627cba77e584464eb0445046eef0da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5328258720714655871, guid: b627cba77e584464eb0445046eef0da4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -67728,6 +68974,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68026,6 +69276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68110,6 +69364,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68343,6 +69601,10 @@ PrefabInstance:
     - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
       propertyPath: m_Name
       value: Upper_Flower_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68600,6 +69862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68655,7 +69921,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1866219527
 Transform:
@@ -68725,7 +69991,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1868625030
 Transform:
@@ -69536,6 +70802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4857611856465497357, guid: 288dd58dbcd034448af410848148ea1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5197827505480423351, guid: 288dd58dbcd034448af410848148ea1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.8
@@ -69729,6 +70999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5
@@ -69918,6 +71192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69939,6 +71217,10 @@ PrefabInstance:
     - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_Name
       value: Upper_Plant_1A
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70001,6 +71283,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70101,7 +71387,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1910598404
 Transform:
@@ -70311,6 +71597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70332,6 +71622,10 @@ PrefabInstance:
     - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_Name
       value: Cafe_Plant_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330023466902097441, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8705986506343208091, guid: 4da2c840dca2d21489efc67c014c28b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70503,6 +71797,10 @@ PrefabInstance:
     - target: {fileID: 744646234109830204, guid: 89c4e852743d7d04a8f14fe1e1f3f22d, type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 744646234109830204, guid: 89c4e852743d7d04a8f14fe1e1f3f22d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -70766,6 +72064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70818,6 +72120,10 @@ PrefabInstance:
     - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_Name
       value: Cafe_Cup_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71175,6 +72481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -71310,6 +72620,10 @@ PrefabInstance:
     - target: {fileID: 2176255894448548762, guid: 318e9a0b0b3e1ba47b261823de4c59dc, type: 3}
       propertyPath: m_Name
       value: Storage_Box_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176255894448548762, guid: 318e9a0b0b3e1ba47b261823de4c59dc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72032,6 +73346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4597959521194420300, guid: 99eaa1f8bd487924abc000694b2da55e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -72085,6 +73403,10 @@ PrefabInstance:
     - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_Name
       value: Cafe_Plate_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850591416543999521, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195768160251915419, guid: f38a7aa92864c0a4c9b85b17d68b01de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72284,6 +73606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Plant_1B
       objectReference: {fileID: 0}
+    - target: {fileID: 3691154774236941374, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4067398185181582980, guid: 265cc1a6c80ac9d43b5c03d7ab2c5dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.3
@@ -72432,6 +73758,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72948,6 +74278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -73080,6 +74414,10 @@ PrefabInstance:
     - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
       propertyPath: m_Name
       value: Cafe_Chair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73742,6 +75080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73803,6 +75145,10 @@ PrefabInstance:
     - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73896,6 +75242,10 @@ PrefabInstance:
     - target: {fileID: 5312235095817008196, guid: 40f7c93fed58e2240868fcc9d81787fe, type: 3}
       propertyPath: m_Name
       value: Vinyl_Player_Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312235095817008196, guid: 40f7c93fed58e2240868fcc9d81787fe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74011,6 +75361,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74177,6 +75531,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74769,7 +76127,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2049955201
 Transform:
@@ -74874,6 +76232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cabinet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7951587487806075536, guid: 60dd2dc5064faf743a85d9ec1d57ea22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74935,6 +76297,10 @@ PrefabInstance:
     - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75195,7 +76561,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2061645372
 Transform:
@@ -75261,6 +76627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3814051962473611968, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4586331975013324922, guid: 02599a04e939ea746860c0787c4ae9dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2800002
@@ -75325,7 +76695,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2068526665
 Transform:
@@ -75378,6 +76748,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75443,7 +76817,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2076911858
 Transform:
@@ -75653,6 +77027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Chair_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5710544661133610424, guid: ff83738de82555b45aaaea1e5ffafed3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75674,6 +77052,10 @@ PrefabInstance:
     - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535386279751717007, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9022988472635902517, guid: 5f88ae6c9b12c8646ba7db7a63bd61cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75801,6 +77183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Table_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -75902,6 +77288,10 @@ PrefabInstance:
     - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76732,6 +78122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Cup_Stand_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6740813550581058399, guid: 49f2069154449724e955061231f34515, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76883,7 +78277,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2120948703
 Transform:
@@ -77018,6 +78412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower
       objectReference: {fileID: 0}
+    - target: {fileID: 6587345871612521942, guid: e31015a6cb5368449a94f0d54981ce03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77042,7 +78440,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2131740305
 Transform:
@@ -77091,6 +78489,10 @@ PrefabInstance:
     - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_Name
       value: Cafe_Bottle_with_Coffee_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976838981503859303, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4358148907935916253, guid: 974b5397a3497da419eed8a3a7e3b24a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77153,6 +78555,10 @@ PrefabInstance:
     - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_Name
       value: Cafe_Table_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706661519769841491, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051944096050050537, guid: 3f4da2bbbc1535848815280b98c93896, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77423,6 +78829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Bottle_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1877421938720002324, guid: ee867ba3b251b5445958e47b7af2e9ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77485,6 +78895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cafe_Coffee_Cup_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6350613895613942212, guid: 6365a6977d50e2045ae07de320f45056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77505,3 +78919,4 @@ SceneRoots:
   - {fileID: 929571789}
   - {fileID: 1088478306}
   - {fileID: 172975916}
+  - {fileID: 456282763}
