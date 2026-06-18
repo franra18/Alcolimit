@@ -3,52 +3,75 @@ using UnityEngine;
 
 public class GestorPersecucion : MonoBehaviour
 {
-    [Header("Ruta de la Misión")]
-    [Tooltip("Arrastra aquí los cilindros en el orden exacto del recorrido")]
-    public List<GameObject> checkpoints;
+    [Header("Referencias")]
+    public GeneradorRutas generador; 
+    
+    [Tooltip("¡Arrastra aquí tu objeto IconoDestino para que el gestor pueda hablar con él!")]
+    public IndicadorMinimapa indicadorRadar; 
 
+    [Tooltip("Mete TODOS los cilindros del 1 al 19 aquí en orden numérico estricto")]
+    public List<GameObject> todosLosCheckpointsDelMapa; 
+
+    private List<GameObject> rutaActiva = new List<GameObject>();
     private int checkpointActual = 0;
 
     void Start()
     {
-        // Al arrancar la escena, actualizamos la lista para que solo se vea el primer punto
-        ActualizarCheckpoints();
+        foreach (var cp in todosLosCheckpointsDelMapa)
+        {
+            if (cp != null) cp.SetActive(false);
+        }
+
+        List<int> rutaNumerica = generador.ObtenerRutaAleatoria();
+
+        if (rutaNumerica != null)
+        {
+            foreach (int idNodo in rutaNumerica)
+            {
+                rutaActiva.Add(todosLosCheckpointsDelMapa[idNodo - 1]);
+            }
+            
+            ActualizarCheckpoints();
+        }
     }
 
-    public void PuntoAlcanzado(int indicePunto)
+public void PuntoAlcanzado(GameObject checkpointTocado)
     {
-        // Verificamos que el jugador ha pisado el punto que tocaba, y no uno antiguo
-        if (indicePunto == checkpointActual)
+        if (checkpointTocado == rutaActiva[checkpointActual])
         {
-            Debug.Log("¡Checkpoint " + checkpointActual + " alcanzado!");
-            checkpointActual++; // Sumamos 1 para avanzar al siguiente objetivo
+            checkpointActual++; 
 
-            if (checkpointActual >= checkpoints.Count)
+            if (checkpointActual >= rutaActiva.Count)
             {
-                // Si ya no quedan más puntos en la lista, hemos llegado al final
-                Debug.Log("¡Misión Completada! El coche está a salvo en la casa.");
-                
-                // (En el futuro, aquí pondremos la pantalla de victoria o frenaremos el coche)
+                if (indicadorRadar != null) 
+                {
+                    indicadorRadar.gameObject.SetActive(false);
+                }
             }
             else
             {
-                // Si aún quedan puntos en la ruta, encendemos el siguiente
-                ActualizarCheckpoints();
+               ActualizarCheckpoints();
             }
         }
     }
 
     void ActualizarCheckpoints()
     {
-        // Recorremos toda la lista de cilindros
-        for (int i = 0; i < checkpoints.Count; i++)
+        for (int i = 0; i < rutaActiva.Count; i++)
         {
-            if (checkpoints[i] != null)
+            if (rutaActiva[i] != null)
             {
-                // Esta línea es magia pura: 
-                // Activa el objeto SI su posición en la lista (i) coincide con el que toca (checkpointActual).
-                // Apaga el objeto automáticamente si NO coincide.
-                checkpoints[i].SetActive(i == checkpointActual);
+                bool meTocaAparecer = (i == checkpointActual);
+                rutaActiva[i].SetActive(meTocaAparecer);
+
+                if (meTocaAparecer)
+                {
+                    
+                    if (indicadorRadar != null)
+                    {
+                        indicadorRadar.SetObjetivo(rutaActiva[i].transform);
+                    }
+                }
             }
         }
     }

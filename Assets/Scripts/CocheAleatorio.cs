@@ -12,14 +12,12 @@ public class Coche : MonoBehaviour
     public float radioEsferaSensor = 0.8f; 
     public LayerMask capaCoches; 
 
-    // --- NUEVO: Para saber si un muro le está bloqueando ---
     private bool detenidoPorSemaforo = false;
 
     void Update()
     {
         if (nodoActual == null) return;
 
-        // --- NUEVO: Si está en un semáforo rojo, cortamos el Update para que no se mueva ---
         if (detenidoPorSemaforo) return; 
 
         // 1. EL OJO DEL COCHE (Láser)
@@ -52,18 +50,15 @@ public class Coche : MonoBehaviour
 
     // --- NUEVO: SENTIR LOS MUROS INVISIBLES ---
     
-    // Esta función se lee todo el rato mientras el coche esté dentro del cubo
     void OnTriggerStay(Collider other)
     {
         SemaforoCritico semaforo = other.GetComponent<SemaforoCritico>();
         if (semaforo != null)
         {
-            // Si la luz es roja (false), detenido es true. Si cambia a verde (true), detenido es false.
-            detenidoPorSemaforo = !semaforo.luzVerde;
+           detenidoPorSemaforo = !semaforo.luzVerde;
         }
     }
 
-    // Por si acaso sale del cubo, nos aseguramos de soltar el freno
     void OnTriggerExit(Collider other)
     {
         SemaforoCritico semaforo = other.GetComponent<SemaforoCritico>();
