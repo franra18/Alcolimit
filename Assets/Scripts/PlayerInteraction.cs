@@ -149,32 +149,63 @@ public class PlayerInteraction : MonoBehaviour
 
         // Raycast from the center of the camera forward
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-        RaycastHit hit;
+        RaycastHit[] hits = Physics.RaycastAll(ray, interactionDistance, interactableLayer);
 
-        BottleInteractable targetBottle = null;
+        IInteractable targetInteractable = null;
+        float closestInteractableDist = float.MaxValue;
 
-        if (Physics.Raycast(ray, out hit, interactionDistance, interactableLayer))
+        // Find the closest valid interactable
+        foreach (var h in hits)
         {
-            // Check if we hit a bottle or if a bottle is in its parents
-            targetBottle = hit.collider.GetComponentInParent<BottleInteractable>();
-            if (targetBottle != null && !targetBottle.CanInteract())
+            var interactable = h.collider.GetComponentInParent<IInteractable>();
+            if (interactable != null && interactable.CanInteract())
             {
-                targetBottle = null;
+                if (h.distance < closestInteractableDist)
+                {
+                    closestInteractableDist = h.distance;
+                    targetInteractable = interactable;
+                }
             }
         }
 
-        if (targetBottle != null)
+        // If we found an interactable, ensure there's no major structural wall/obstacle blocking it
+        if (targetInteractable != null)
+        {
+            foreach (var h in hits)
+            {
+                if (h.distance < closestInteractableDist)
+                {
+                    // Check if we hit a wall/floor/ceiling/door structure before reaching the interactable
+                    string nameLower = h.collider.gameObject.name.ToLower();
+                    if (nameLower.Contains("wall") || nameLower.Contains("floor") || nameLower.Contains("ceiling") ||
+                        nameLower.Contains("suelo") || nameLower.Contains("muro") || nameLower.Contains("pared") ||
+                        nameLower.Contains("techo") || nameLower.Contains("slab") || nameLower.Contains("door") || 
+                        nameLower.Contains("puerta"))
+                    {
+                        // Check if this structural object itself is or contains the targetInteractable (unlikely but safe)
+                        var hitInteractable = h.collider.GetComponentInParent<IInteractable>();
+                        if (hitInteractable != targetInteractable)
+                        {
+                            targetInteractable = null;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (targetInteractable != null)
         {
             // Display interaction prompt
             if (promptText != null)
             {
-                promptText.text = targetBottle.promptText;
+                promptText.text = targetInteractable.GetPromptText();
             }
 
             // Check if player presses interaction key
             if (interactAction.triggered)
             {
-                targetBottle.Interact(playerCamera.transform, sistemaAlcohol);
+                targetInteractable.Interact(playerCamera.transform, sistemaAlcohol);
                 if (promptText != null)
                 {
                     promptText.text = ""; // Clear immediately after interacting
@@ -183,7 +214,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            // Clear prompt text when not looking at an interactable bottle
+            // Clear prompt text when not looking at an interactable
             if (promptText != null && promptText.text != "")
             {
                 promptText.text = "";

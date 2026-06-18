@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BottleInteractable : MonoBehaviour
+public class BottleInteractable : MonoBehaviour, IInteractable
 {
     [Header("Interaction Settings")]
     public string promptText = "Press [E] to Drink";
@@ -14,6 +14,11 @@ public class BottleInteractable : MonoBehaviour
     private void Awake()
     {
         bottleCollider = GetComponent<Collider>();
+    }
+
+    public string GetPromptText()
+    {
+        return promptText;
     }
 
     public bool CanInteract()

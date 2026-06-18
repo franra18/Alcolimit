@@ -2,9 +2,6 @@
 ## Asignación de tareas
 
 **Fran**
-- Hacer puerta al bar
-- Poner carteles en las salas VIP / Baños
-- Esconder las bebidas (spawnpoints definidos y aparicion aleatoria)
 - Crear menú de inicio -> Hay que meter sonidos primero
 - HUD
 

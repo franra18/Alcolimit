@@ -1,0 +1,31 @@
+{
+    "asset": "84ddd79d5f799454e834670b2a08b62a",
+    "fileName": "019edbf5-0079-7329-9c5c-c6ae3803e5a8.png",
+    "prompt": "stylized wooden bar door, rustic, pub entrance, detailed wood textures, vibrant warm colors, front view, clean game asset look, dark metal hinges and handle",
+    "negativePrompt": "",
+    "model": "flux-2-dev",
+    "modelName": "Flux 2 (Dev)",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelatePixelGridSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0,
+    "dynamicParams": {
+        "serializedData": []
+    }
+}
