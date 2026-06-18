@@ -2,9 +2,10 @@
 ## Asignación de tareas
 
 **Fran**
-- Pensar como se van a esconder las bebidas
-- Agregar la interacción con las bebidas (molaría pedirle a la IA una animación; sino, sonido de beber + eructo y que no se pueda mover)
-- Crear menú de inicio
+- Hacer puerta al bar
+- Poner carteles en las salas VIP / Baños
+- Esconder las bebidas (spawnpoints definidos y aparicion aleatoria)
+- Crear menú de inicio -> Hay que meter sonidos primero
 - HUD
 
 **Marcos**
