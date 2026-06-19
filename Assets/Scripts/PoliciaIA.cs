@@ -19,6 +19,9 @@ public class PoliciaIA : MonoBehaviour
     [Tooltip("Tiempo en segundos que pasará reculando")]
     public float duracionMarchaAtras = 1.2f;  
 
+    [Tooltip("Arrastra aquí el objeto IconoPolicia de la UI para rastrear este coche")]
+    public IndicadorMinimapa indicadorRadarPolicia;
+
     private NavMeshAgent agent;
     private Rigidbody rb;
 
@@ -37,6 +40,11 @@ public class PoliciaIA : MonoBehaviour
 
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         rb.linearDamping = 1f; 
+        // Le pasamos nuestro propio Transform al radar de la policía
+        if (indicadorRadarPolicia != null)
+        {
+            indicadorRadarPolicia.SetObjetivo(transform);
+        }
     }
 
     void FixedUpdate()
