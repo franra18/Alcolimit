@@ -27,6 +27,9 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
+    // NUEVA VARIABLE PARA CONTROLAR EL MOVIMIENTO
+    public bool puedeMoverse = true;
+
     private void OnEnable()
     {
         moveAction.Enable();
@@ -53,9 +56,19 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
-        HandleLook();
-        HandleMovement();
-        HandleJump();
+        HandleLook(); // La cámara siempre debe funcionar
+
+        if (puedeMoverse)
+        {
+            HandleMovement();
+            HandleJump();
+        }
+        else
+        {
+            // Si está congelado, detiene las animaciones suavemente y aplica solo la gravedad
+            DetenerAnimaciones();
+            AplicarGravedad();
+        }
     }
 
     private void HandleLook()
@@ -67,7 +80,7 @@ public class FirstPersonController : MonoBehaviour
         float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 80f); // Evita dar volteretas con la cámara
+        xRotation = Mathf.Clamp(xRotation, -90f, 80f);
 
         // Rota la cámara arriba/abajo
         cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
@@ -80,7 +93,7 @@ public class FirstPersonController : MonoBehaviour
         isGrounded = controller.isGrounded;
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f; // Mantiene al personaje pegado al suelo
+            velocity.y = -2f;
         }
 
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
@@ -88,10 +101,8 @@ public class FirstPersonController : MonoBehaviour
 
         controller.Move(move * moveSpeed * Time.deltaTime);
 
-        // Sincronización suavizada con el Animator
         if (animator != null)
         {
-            // Interpola el valor actual hacia el input objetivo (el 10f es la velocidad de transición)
             float smoothHor = Mathf.Lerp(animator.GetFloat("Hor"), moveInput.x, Time.deltaTime * 10f);
             float smoothVert = Mathf.Lerp(animator.GetFloat("Vert"), moveInput.y, Time.deltaTime * 10f);
 
@@ -116,8 +127,36 @@ public class FirstPersonController : MonoBehaviour
             animator.SetBool("IsJump", false);
         }
 
-        // Aplicar gravedad
+        AplicarGravedad();
+    }
+
+    private void AplicarGravedad()
+    {
+        isGrounded = controller.isGrounded;
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void DetenerAnimaciones()
+    {
+        if (animator != null)
+        {
+            float smoothHor = Mathf.Lerp(animator.GetFloat("Hor"), 0f, Time.deltaTime * 10f);
+            float smoothVert = Mathf.Lerp(animator.GetFloat("Vert"), 0f, Time.deltaTime * 10f);
+
+            animator.SetFloat("Hor", smoothHor);
+            animator.SetFloat("Vert", smoothVert);
+        }
+    }
+
+    // NUEVA FUNCIÓN PARA RECIBIR EL MENSAJE
+    public void PermitirMovimiento(bool estado)
+    {
+        puedeMoverse = estado;
     }
 }
