@@ -42940,14 +42940,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoliciaIA
   jugador: {fileID: 829945181}
-  velocidadMaxima: 18
+  velocidadMaxima: 15
   velocidadGiro: 4
   distanciaFrenado: 4
   tiempoLimiteAtascado: 1.5
   duracionMarchaAtras: 1.2
   indicadorRadarPolicia: {fileID: 1099725570}
-  distanciaCaptura: 6
-  tiempoParaCaptura: 5
+  distanciaCaptura: 3
+  tiempoParaCaptura: 6
   panelGameOver: {fileID: 406669820}
 --- !u!195 &1268671032
 NavMeshAgent:
@@ -42959,11 +42959,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -334000983
   m_Radius: 2.9670887
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 3
+  m_Acceleration: 6
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 110
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -63957,6 +63957,7 @@ MonoBehaviour:
   nodoFin: 19
   longitudMinima: 10
   longitudMaxima: 14
+  panelVictoria: {fileID: 1021216944}
 --- !u!4 &1772333288
 Transform:
   m_ObjectHideFlags: 0
@@ -79648,16 +79649,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1917726808848753915, guid: 650cb34eeab11384e99f60e598a1cb8f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4922796045304232510, guid: 650cb34eeab11384e99f60e598a1cb8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2094045279}
   m_SourcePrefab: {fileID: 100100000, guid: 650cb34eeab11384e99f60e598a1cb8f, type: 3}
 --- !u!4 &2094045274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5166482600283985221, guid: 650cb34eeab11384e99f60e598a1cb8f, type: 3}
   m_PrefabInstance: {fileID: 2094045273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2094045279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353091810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b4f00724d7944429de3184bda6977a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &2094729862
 PrefabInstance:
   m_ObjectHideFlags: 0
