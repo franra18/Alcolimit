@@ -1,0 +1,23 @@
+{
+    "asset": "09221255dad824d409fdae70d92c3f13",
+    "fileName": "019ee0d3-88f5-74b7-bf57-e333187cc68a.glb",
+    "prompt": "A cute low-poly cartoon toilet with the lid and seat fully opened, showing the water inside the bowl",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "2c2a68bf3a6f1304b8227c4005fa5b2f",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": -1
+}

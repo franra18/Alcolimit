@@ -11316,75 +11316,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1569432187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &270989297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 270989298}
-  - component: {fileID: 270989300}
-  - component: {fileID: 270989299}
-  m_Layer: 0
-  m_Name: ZonaOrinar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &270989298
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270989297}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.647, y: 3.662, z: 11.018}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2049479711}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &270989299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270989297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52b66f2c51f192458149dd05a6bdbfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZonaAlivio
-  accionAlPulsarE: 0
-  nivelAlcoholRequerido: 33
-  reduccionAlcohol: 5.5
---- !u!65 &270989300
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270989297}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.53631306, y: 0.40206766, z: 0.56469727}
-  m_Center: {x: -0.068321705, y: -0.2609098, z: 0.5723095}
 --- !u!1 &274929152
 GameObject:
   m_ObjectHideFlags: 0
@@ -23039,75 +22970,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1717451022928108893, guid: 7ab71422777b915408a5c37e19fb3bfe, type: 3}
   m_PrefabInstance: {fileID: 530696023}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &533727347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 533727348}
-  - component: {fileID: 533727350}
-  - component: {fileID: 533727349}
-  m_Layer: 0
-  m_Name: ZonaVomitar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &533727348
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533727347}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.027, y: 3.662, z: 11.617}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2049479711}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &533727349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533727347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52b66f2c51f192458149dd05a6bdbfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZonaAlivio
-  accionAlPulsarE: 1
-  nivelAlcoholRequerido: 55
-  reduccionAlcohol: 9.5
---- !u!65 &533727350
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533727347}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6663246, y: 0.34528065, z: 0.6706157}
-  m_Center: {x: -0.05383253, y: 0.16285586, z: 0.40504813}
 --- !u!1001 &534916791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27745,15 +27607,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.197
+      value: -1.399
       objectReference: {fileID: 0}
     - target: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.305
+      value: 0.142
       objectReference: {fileID: 0}
     - target: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.998
+      value: -6.192
       objectReference: {fileID: 0}
     - target: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29136,7 +28998,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 773569699832443847, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856698414}
+    - targetCorrespondingSourceObject: {fileID: 773569699832443847, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856698415}
   m_SourcePrefab: {fileID: 100100000, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
 --- !u!4 &671532103 stripped
 Transform:
@@ -32110,6 +31978,11 @@ Transform:
   - {fileID: 842273795}
   m_Father: {fileID: 1418365354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &750409980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 922119455542052807, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+  m_PrefabInstance: {fileID: 1217676311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &751000863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35922,6 +35795,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
   m_PrefabInstance: {fileID: 856674048}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &856698413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 773569699832443847, guid: 2c111931762ffdf4590b23a10a7c3c67, type: 3}
+  m_PrefabInstance: {fileID: 671532102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &856698414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856698413}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5219549697578499520, guid: 54fbc0f112ea2b548a5dfa012052d7b5, type: 3}
+--- !u!114 &856698415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856698413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52b66f2c51f192458149dd05a6bdbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaAlivio
+  accionAlPulsarE: 0
+  nivelAlcoholRequerido: 33
+  reduccionAlcohol: 5
 --- !u!1 &857204943
 GameObject:
   m_ObjectHideFlags: 0
@@ -49844,13 +49759,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 922119455542052807, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1217676313}
+    - targetCorrespondingSourceObject: {fileID: 922119455542052807, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1217676314}
   m_SourcePrefab: {fileID: 100100000, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
 --- !u!4 &1217676312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4400268332703985007, guid: 69c69fd6a2c4e9248a7ac540612309f4, type: 3}
   m_PrefabInstance: {fileID: 1217676311}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1217676313
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750409980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3968955181353598250, guid: 0ee40a2324295844f86f802806d74bc0, type: 3}
+--- !u!114 &1217676314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750409980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52b66f2c51f192458149dd05a6bdbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaAlivio
+  accionAlPulsarE: 1
+  nivelAlcoholRequerido: 55
+  reduccionAlcohol: 9.5
 --- !u!1 &1220647959
 GameObject:
   m_ObjectHideFlags: 0
@@ -83017,8 +82975,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 270989298}
-  - {fileID: 533727348}
   - {fileID: 639175977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
