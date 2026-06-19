@@ -14087,6 +14087,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &333544184
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17305,6 +17307,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &418040080
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19633,6 +19637,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &469737870
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24780,6 +24786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 573392838}
   - component: {fileID: 573392839}
+  - component: {fileID: 573392840}
   m_Layer: 0
   m_Name: ZonaVIP
   m_TagString: Untagged
@@ -24814,12 +24821,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736701a91fe69c64885f12d4eb6b8c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
-  capacidadMaxima: 3
+  capacidadMaxima: 4
+  esPistaDeBaile: 0
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 0}
+  areaAleatoria: {fileID: 0}
   clienteEsperando: 0
   clienteServido: 0
+--- !u!65 &573392840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573392837}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.923022, y: 0.84204865, z: 1.5879401}
+  m_Center: {x: -0.22638199, y: 0.078975916, z: -0.077992365}
 --- !u!1 &573752325
 GameObject:
   m_ObjectHideFlags: 0
@@ -25494,6 +25524,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &594183640
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27315,75 +27347,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 238262984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &639175976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 639175977}
-  - component: {fileID: 639175979}
-  - component: {fileID: 639175978}
-  m_Layer: 0
-  m_Name: ZonaBailar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &639175977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639175976}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.518, y: 0.659, z: 2.661}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2049479711}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &639175978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639175976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52b66f2c51f192458149dd05a6bdbfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZonaAlivio
-  accionAlPulsarE: 1
-  nivelAlcoholRequerido: 55
-  reduccionAlcohol: 9.5
---- !u!65 &639175979
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639175976}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.0356827, y: 2.20539, z: 8.416673}
-  m_Center: {x: -1.0178413, y: 0.21978009, z: -0.9567933}
 --- !u!1 &641674385
 GameObject:
   m_ObjectHideFlags: 0
@@ -28107,6 +28070,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &663541119
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35915,6 +35880,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &857204947
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44963,6 +44930,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1064801410
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -49887,6 +49856,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1220647963
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -52170,6 +52141,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1284987637
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -54416,9 +54389,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
   capacidadMaxima: 1
+  esPistaDeBaile: 0
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 1584293775}
+  areaAleatoria: {fileID: 0}
   clienteEsperando: 0
   clienteServido: 0
 --- !u!1 &1340873646
@@ -58821,6 +58796,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1430905671
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66594,6 +66571,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1621526632
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -66896,6 +66875,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1627044540
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -70119,8 +70100,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1712050434}
   - component: {fileID: 1712050435}
+  - component: {fileID: 1712050436}
   m_Layer: 0
-  m_Name: "ZonaBa\xF1o1"
+  m_Name: "ZonaBa\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70153,12 +70135,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736701a91fe69c64885f12d4eb6b8c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
-  capacidadMaxima: 3
+  capacidadMaxima: 4
+  esPistaDeBaile: 0
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 0}
+  areaAleatoria: {fileID: 1712050436}
   clienteEsperando: 0
   clienteServido: 0
+--- !u!65 &1712050436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712050433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1693525, y: 0.90577954, z: 0.9349011}
+  m_Center: {x: 0.011598746, y: 0.04711036, z: -0.44002318}
 --- !u!1 &1713836231
 GameObject:
   m_ObjectHideFlags: 0
@@ -70384,6 +70389,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1720394082}
   - component: {fileID: 1720394083}
+  - component: {fileID: 1720394084}
+  - component: {fileID: 1720394085}
   m_Layer: 0
   m_Name: ZonaBaile
   m_TagString: Untagged
@@ -70418,12 +70425,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736701a91fe69c64885f12d4eb6b8c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
-  capacidadMaxima: 3
+  capacidadMaxima: 5
+  esPistaDeBaile: 1
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 0}
+  areaAleatoria: {fileID: 1720394084}
   clienteEsperando: 0
   clienteServido: 0
+--- !u!65 &1720394084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720394081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.61606663, y: 0.4907844, z: 2.7805386}
+  m_Center: {x: -0.12179216, y: 0.039742827, z: -0.3118698}
+--- !u!114 &1720394085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720394081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13f74994f9029e4288cbe5d289e43be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaBaileJugador
+  textoInteraccion: Presiona [E] para Bailar
+  textoCooldown: Descansando...
+  reduccionAlcohol: 6
+  duracionBaile: 10
+  tiempoCooldown: 20
 --- !u!1 &1721039935
 GameObject:
   m_ObjectHideFlags: 0
@@ -70596,6 +70643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730988123}
   - component: {fileID: 1730988124}
+  - component: {fileID: 1730988125}
   m_Layer: 0
   m_Name: ZonaBarra3
   m_TagString: Untagged
@@ -70631,11 +70679,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
   capacidadMaxima: 2
+  esPistaDeBaile: 0
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 0}
+  areaAleatoria: {fileID: 1730988125}
   clienteEsperando: 0
   clienteServido: 0
+--- !u!65 &1730988125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730988122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5844873, y: 0.73962563, z: 0.4142143}
+  m_Center: {x: 0.10229619, y: 0.13018756, z: 0.08270946}
 --- !u!1001 &1731197730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71042,9 +71113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZonaNPC
   capacidadMaxima: 1
+  esPistaDeBaile: 0
   ocupantesActuales: 0
   alguienHablando: 0
   puntoCamarero: {fileID: 1138019688}
+  areaAleatoria: {fileID: 0}
   clienteEsperando: 0
   clienteServido: 0
 --- !u!1 &1734749304
@@ -71951,17 +72024,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8148055865612264782, guid: 47a73b5302dd6b443aaa236e21377cd2, type: 3}
   m_PrefabInstance: {fileID: 2104716958}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1764729486 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1748522070103401148, guid: 47a73b5302dd6b443aaa236e21377cd2, type: 3}
-  m_PrefabInstance: {fileID: 2104716958}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764729484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0b9cd61ebf4f44ba2455626d85ed24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SistemaAlcohol
 --- !u!4 &1764729490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5905668280918056129, guid: 47a73b5302dd6b443aaa236e21377cd2, type: 3}
@@ -76939,6 +77001,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1896886245
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -80034,6 +80098,8 @@ MonoBehaviour:
   tiempoZonaMax: 5
   tiempoLibreMin: 1
   tiempoLibreMax: 3
+  velocidadGiroBaile: 200
+  tiempoBaile: 10
 --- !u!195 &1981976582
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -82945,53 +83011,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5737652809005505598, guid: 9f8a8bb21c3257345b6946006b77de8e, type: 3}
   m_PrefabInstance: {fileID: 2049260994}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2049479710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2049479711}
-  - component: {fileID: 2049479712}
-  m_Layer: 0
-  m_Name: "ZonasAcci\xF3n"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2049479711
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049479710}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.16302, y: 0.211, z: -4.53757}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 639175977}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2049479712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049479710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6ce7eaa5f1637439e26193fefdefdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  sistemaAlcoholJugador: {fileID: 1764729486}
-  segundosParaRestar: 10
 --- !u!1 &2049955200
 GameObject:
   m_ObjectHideFlags: 0
@@ -86280,4 +86299,3 @@ SceneRoots:
   - {fileID: 1917316519}
   - {fileID: 2104716958}
   - {fileID: 1260513378}
-  - {fileID: 2049479711}

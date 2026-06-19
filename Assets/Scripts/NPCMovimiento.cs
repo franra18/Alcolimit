@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -17,6 +18,10 @@ public class NPCMovimiento : MonoBehaviour
     public float tiempoLibreMin = 1f;
     public float tiempoLibreMax = 3f;
 
+    [Header("Ajustes de Baile")]
+    public float velocidadGiroBaile = 200f;
+    public float tiempoBaile = 10f; // Variable añadida para el tiempo fijo en pista
+
     private NavMeshAgent agente;
     private Animator animator;
     
@@ -28,6 +33,7 @@ public class NPCMovimiento : MonoBehaviour
     private ZonaNPC zonaActual;
     private ZonaNPC[] todasLasZonas;
     private NavMeshTriangulation navMeshData;
+    private Coroutine rutinaGiro;
 
     private void Start()
     {
@@ -51,10 +57,19 @@ public class NPCMovimiento : MonoBehaviour
                 esperando = true;
                 temporizador = 0f;
 
-                if (zonaActual != null && zonaActual.puntoCamarero != null)
+                if (zonaActual != null)
                 {
-                    zonaActual.clienteEsperando = true;
-                    zonaActual.clienteServido = false;
+                    if (zonaActual.puntoCamarero != null)
+                    {
+                        zonaActual.clienteEsperando = true;
+                        zonaActual.clienteServido = false;
+                    }
+
+                    if (zonaActual.esPistaDeBaile)
+                    {
+                        if (rutinaGiro != null) StopCoroutine(rutinaGiro);
+                        rutinaGiro = StartCoroutine(GirarYBailar());
+                    }
                 }
             }
         }
@@ -70,8 +85,7 @@ public class NPCMovimiento : MonoBehaviour
             }
             else
             {
-                // Gestionar el audio si está en una zona con más gente
-                if (zonaActual != null && zonaActual.ocupantesActuales > 1)
+                if (zonaActual != null && zonaActual.ocupantesActuales > 1 && !zonaActual.esPistaDeBaile)
                 {
                     if (!zonaActual.alguienHablando && !estoyHablando)
                     {
@@ -97,6 +111,26 @@ public class NPCMovimiento : MonoBehaviour
         SincronizarAnimacion();
     }
 
+    private IEnumerator GirarYBailar()
+    {
+        float anguloY = Random.Range(80f, 100f);
+        Quaternion rotacionDestino = Quaternion.Euler(0f, anguloY, 0f);
+
+        agente.updateRotation = false;
+
+        while (Quaternion.Angle(transform.rotation, rotacionDestino) > 2f)
+        {
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotacionDestino, velocidadGiroBaile * Time.deltaTime);
+            yield return null;
+        }
+
+        agente.updateRotation = true;
+        if (animator != null)
+        {
+            animator.SetBool("Dancing", true);
+        }
+    }
+
     private void DejarDeHablar()
     {
         if (estoyHablando)
@@ -109,7 +143,11 @@ public class NPCMovimiento : MonoBehaviour
 
     private void DecidirProximoDestino()
     {
+        if (rutinaGiro != null) StopCoroutine(rutinaGiro);
+        
         DejarDeHablar();
+        
+        if (animator != null) animator.SetBool("Dancing", false);
         
         if (Random.value <= probabilidadIrAZona && todasLasZonas.Length > 0)
         {
@@ -141,11 +179,19 @@ public class NPCMovimiento : MonoBehaviour
             zonaActual = zonasDisponibles[indiceAleatorio];
             zonaActual.ocupantesActuales++;
 
-            Vector3 puntoSeparado = zonaActual.transform.position + (Random.insideUnitSphere * 1.5f);
-            puntoSeparado.y = zonaActual.transform.position.y;
+            Vector3 destinoDestino = zonaActual.ObtenerPuntoDestino();
             
-            agente.SetDestination(puntoSeparado);
-            tiempoEsperaActual = Random.Range(tiempoZonaMin, tiempoZonaMax);
+            agente.SetDestination(destinoDestino);
+            
+            // Asignación de tiempo modificado para distinguir pista de baile
+            if (zonaActual.esPistaDeBaile)
+            {
+                tiempoEsperaActual = tiempoBaile;
+            }
+            else
+            {
+                tiempoEsperaActual = Random.Range(tiempoZonaMin, tiempoZonaMax);
+            }
         }
         else
         {
