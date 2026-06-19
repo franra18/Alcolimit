@@ -2,8 +2,6 @@
 ## Asignación de tareas
 
 **Fran**
-- Duplicar gente bar
-- Mejorar apariencia espejo 
 - Crear menú de inicio -> Hay que meter sonidos primero
 - HUD
 

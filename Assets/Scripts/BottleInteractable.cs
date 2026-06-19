@@ -4,7 +4,7 @@ using UnityEngine;
 public class BottleInteractable : MonoBehaviour, IInteractable
 {
     [Header("Interaction Settings")]
-    public string promptText = "Presiona [E] para Beber";
+    private string promptText = "Presiona [E] para Beber";
     public float alcoholAmount = 10f;
     private float drinkDuration = 1.5f;
 
