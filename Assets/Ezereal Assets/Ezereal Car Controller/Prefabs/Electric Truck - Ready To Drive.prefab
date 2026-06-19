@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4497057249909547213}
   - component: {fileID: 4889167265785821569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Back Wheel Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8087006153133659707}
   - component: {fileID: 8670158982036269256}
   - component: {fileID: 8681454724400560105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left High Beam Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,14 +94,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163514614938969025}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 40
   m_Range: 40
   m_SpotAngle: 120
   m_InnerSpotAngle: 40
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -146,7 +146,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -163,17 +163,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &263641052562007838
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011161217368231666}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +241,7 @@ GameObject:
   - component: {fileID: 4892950349455343679}
   - component: {fileID: 5033367523421701951}
   - component: {fileID: 4653410825703388520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,6 +288,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -336,7 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2443399412854244014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Camera Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3721595375829860320}
   - component: {fileID: 5646176738033914504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Engine Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +506,7 @@ GameObject:
   - component: {fileID: 5105352848680881292}
   - component: {fileID: 8167009571759912310}
   - component: {fileID: 6448538004508146665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,6 +556,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -571,9 +580,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &510028200888098074
 GameObject:
@@ -586,7 +597,7 @@ GameObject:
   - component: {fileID: 4875955743240704011}
   - component: {fileID: 4050974250262551695}
   - component: {fileID: 641628044967968593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,6 +647,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -657,9 +670,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &725948985008943082
 GameObject:
@@ -673,7 +688,7 @@ GameObject:
   - component: {fileID: 7925830831651289932}
   - component: {fileID: 876664340845484038}
   - component: {fileID: 2563566122778079595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,6 +743,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -750,9 +767,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &2563566122778079595
 MeshCollider:
@@ -787,7 +806,7 @@ GameObject:
   - component: {fileID: 983647840703205977}
   - component: {fileID: 1813519745352669176}
   - component: {fileID: 3389862781234154143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,6 +856,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -859,9 +880,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &785065691605374337
 GameObject:
@@ -874,7 +897,7 @@ GameObject:
   - component: {fileID: 3374598086080191689}
   - component: {fileID: 6244930152582854059}
   - component: {fileID: 8563310049683772569}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light Turn Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,6 +947,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -945,9 +970,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &937431284635680496
 GameObject:
@@ -960,7 +987,7 @@ GameObject:
   - component: {fileID: 1683863545243058709}
   - component: {fileID: 1011903598070809721}
   - component: {fileID: 7534483414283737680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Handbrake Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,6 +1037,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1031,9 +1060,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1042546188584304861
 GameObject:
@@ -1046,7 +1077,7 @@ GameObject:
   - component: {fileID: 6218662043124419338}
   - component: {fileID: 1879257082846861931}
   - component: {fileID: 1137792234055016554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,6 +1127,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1117,9 +1150,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1097937171001248143
 GameObject:
@@ -1132,7 +1167,7 @@ GameObject:
   - component: {fileID: 888819832122153101}
   - component: {fileID: 8133517561832740547}
   - component: {fileID: 3945810850666681013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,6 +1217,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1203,9 +1240,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1114985381916676986
 GameObject:
@@ -1218,7 +1257,7 @@ GameObject:
   - component: {fileID: 7389361003846797207}
   - component: {fileID: 8150525144443144309}
   - component: {fileID: 8872572912151806914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Brake Roof Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1268,6 +1307,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1290,10 +1331,103 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1218672410143945850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279630999063037734}
+  - component: {fileID: 8849145249686143167}
+  m_Layer: 6
+  m_Name: IconoMinimapa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1279630999063037734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218672410143945850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.1851883, y: 40, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2190837854687154432}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &8849145249686143167
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218672410143945850}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 89d5245b2c9f2d743a99068efe0cf663, type: 3}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &1251269082278255087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1439,7 @@ GameObject:
   - component: {fileID: 8815942783761879884}
   - component: {fileID: 4096107638888708711}
   - component: {fileID: 4032213247061551316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Debug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1355,6 +1489,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1376,9 +1512,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1306282543030053906
 GameObject:
@@ -1389,7 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7936453154839787327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1563,7 @@ GameObject:
   - component: {fileID: 8148812584001015434}
   - component: {fileID: 7301534120843566014}
   - component: {fileID: 5097219898704091518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rear Right Wheel Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1747,7 @@ GameObject:
   - component: {fileID: 8759391616254398820}
   - component: {fileID: 5027646422212126803}
   - component: {fileID: 675373013905269651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Headlight High Beam Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,6 +1797,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1680,9 +1820,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1433299606589439477
 GameObject:
@@ -1695,7 +1837,7 @@ GameObject:
   - component: {fileID: 318376001454825879}
   - component: {fileID: 7223050563441275024}
   - component: {fileID: 641721283919132489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Accelerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1745,6 +1887,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1766,9 +1910,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1471386031682707178
 GameObject:
@@ -1781,7 +1927,7 @@ GameObject:
   - component: {fileID: 306257104729683215}
   - component: {fileID: 2175242885285741251}
   - component: {fileID: 1277512639228419983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Brake Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,6 +1977,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1852,9 +2000,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1494316131604027528
 GameObject:
@@ -1865,7 +2015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3732759490693539507}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1909,7 +2059,7 @@ GameObject:
   - component: {fileID: 8927692965520368521}
   - component: {fileID: 3430521655025509576}
   - component: {fileID: 6191635746339405559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body Trunk Hatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1960,6 +2110,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1982,9 +2134,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6191635746339405559
 BoxCollider:
@@ -2018,7 +2172,7 @@ GameObject:
   - component: {fileID: 6613438873143075462}
   - component: {fileID: 7917055040431235866}
   - component: {fileID: 1009662608596450911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Side Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,6 +2222,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2089,9 +2245,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1727273271372651592
 GameObject:
@@ -2105,7 +2263,7 @@ GameObject:
   - component: {fileID: 163864637485557209}
   - component: {fileID: 1366980294450293151}
   - component: {fileID: 7101657288534813640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front Left Wheel Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2289,7 +2447,7 @@ GameObject:
   - component: {fileID: 1758031591678888946}
   - component: {fileID: 6531406978784816653}
   - component: {fileID: 7163329563956487437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Mesh Front Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2339,6 +2497,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2362,9 +2522,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1920492357214142347
 GameObject:
@@ -2395,7 +2557,7 @@ Transform:
   m_GameObject: {fileID: 1920492357214142347}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000027823788, y: -0.000000024473861, z: 0.0000000025938993, w: 1}
-  m_LocalPosition: {x: -0.45, y: -4.3305874, z: 14.475755}
+  m_LocalPosition: {x: -0.44999695, y: -4.3305874, z: 14.475754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2547,7 +2709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 922023268924887817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2586,7 +2748,7 @@ GameObject:
   - component: {fileID: 2924987538571672079}
   - component: {fileID: 4288817356239265851}
   - component: {fileID: 327843898301234325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Brake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2636,6 +2798,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2657,9 +2821,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2014932164628981742
 GameObject:
@@ -2670,7 +2836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399909159014799833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2705,7 +2871,7 @@ GameObject:
   - component: {fileID: 6957018526577045757}
   - component: {fileID: 7249575755065432171}
   - component: {fileID: 5053289656582495306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Placeholder Front Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2755,6 +2921,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2776,9 +2944,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2095505509255732707
 GameObject:
@@ -2791,7 +2961,7 @@ GameObject:
   - component: {fileID: 1606881799038897835}
   - component: {fileID: 3689619075994622528}
   - component: {fileID: 4450997394425965513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Side Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2841,6 +3011,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2862,9 +3034,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2126184741452958854
 GameObject:
@@ -2970,7 +3144,7 @@ Transform:
   m_GameObject: {fileID: 2305453469524639500}
   serializedVersion: 2
   m_LocalRotation: {x: 0.084719226, y: 0.12404019, z: -0.010629802, w: 0.98859686}
-  m_LocalPosition: {x: -1.42, y: -5.170587, z: 14.805755}
+  m_LocalPosition: {x: -1.4199982, y: -5.170587, z: 14.805756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3062,7 +3236,7 @@ GameObject:
   - component: {fileID: 7043639784734707621}
   - component: {fileID: 5671100681519049915}
   - component: {fileID: 468992078055231581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3112,6 +3286,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3142,9 +3318,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2430618324150818407
 GameObject:
@@ -3157,7 +3335,7 @@ GameObject:
   - component: {fileID: 7772009771370447036}
   - component: {fileID: 8571990315570905297}
   - component: {fileID: 2815124990998565501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3207,11 +3385,13 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0cd16ab25949b574b95bfa49fade5647, type: 2}
-  - {fileID: 2100000, guid: ad87c86f68bd6fb4e92cab0374ae2c91, type: 2}
+  - {fileID: 2100000, guid: a729bc5c511fd5049a527e72a2ab56cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3229,9 +3409,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2600946285136050658
 GameObject:
@@ -3244,7 +3426,7 @@ GameObject:
   - component: {fileID: 6855617534719913773}
   - component: {fileID: 2829012010068934284}
   - component: {fileID: 5367465449169915142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Debug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3294,6 +3476,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3315,9 +3499,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2607294291997470760
 GameObject:
@@ -3330,7 +3516,7 @@ GameObject:
   - component: {fileID: 2672306762100738303}
   - component: {fileID: 2800203382223691296}
   - component: {fileID: 5932259639698538611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Lever Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3380,6 +3566,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3401,9 +3589,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2704453379113076820
 GameObject:
@@ -3415,9 +3605,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2190837854687154432}
   - component: {fileID: 4451795180840118949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Electric Truck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3431,7 +3621,7 @@ Transform:
   m_GameObject: {fileID: 2704453379113076820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -112, y: 0, z: -76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3443,6 +3633,8 @@ Transform:
   - {fileID: 2312292322347002357}
   - {fileID: 3721595375829860320}
   - {fileID: 5491716905972590065}
+  - {fileID: 1279630999063037734}
+  - {fileID: 3639063065957680964}
   m_Father: {fileID: 3639029797081042991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4451795180840118949
@@ -3452,10 +3644,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704453379113076820}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1500
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3483,7 +3675,7 @@ GameObject:
   - component: {fileID: 8302342867334061605}
   - component: {fileID: 1734616098212812155}
   - component: {fileID: 7933900837833018326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bumper Rear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3533,6 +3725,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3554,9 +3748,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2965071895334065929
 GameObject:
@@ -3569,7 +3765,7 @@ GameObject:
   - component: {fileID: 4609204953476376415}
   - component: {fileID: 1528985861540255995}
   - component: {fileID: 4700020500151193625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Current Gear (TMP) - Dashboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3615,6 +3811,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3636,9 +3834,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4700020500151193625
 MonoBehaviour:
@@ -3698,6 +3898,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3743,7 +3944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8487803082624264600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3781,7 +3982,7 @@ GameObject:
   - component: {fileID: 771508146646250625}
   - component: {fileID: 5556072768363184125}
   - component: {fileID: 8471101702874172241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light Turn Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3831,6 +4032,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3852,9 +4055,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3107436333511381307
 GameObject:
@@ -3866,7 +4071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7253166629556715395}
   - component: {fileID: 3935169504640911217}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left Back Wheel Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3939,7 +4144,7 @@ Transform:
   m_GameObject: {fileID: 3151794262272190415}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0995649, y: -0.000000006051371, z: 6.0551286e-10, w: 0.9950311}
-  m_LocalPosition: {x: 0, y: -3.0506816, z: 7.677422}
+  m_LocalPosition: {x: 0, y: -3.0506818, z: 7.6774216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4092,6 +4297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a076c17fe76165e4f8ed21498b877bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Easing: 0
   Modifiers: []
   references:
     version: 2
@@ -4254,6 +4460,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4296,7 +4503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2656304824606788827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4333,7 +4540,7 @@ GameObject:
   - component: {fileID: 7559732314963155794}
   - component: {fileID: 3124681405264023301}
   - component: {fileID: 7622848872864971721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light High Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4383,6 +4590,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4404,9 +4613,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3317383048124490902
 GameObject:
@@ -4418,7 +4629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8653545342143635817}
   - component: {fileID: 427068076809616472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4473,7 +4684,7 @@ GameObject:
   - component: {fileID: 8821876115826861461}
   - component: {fileID: 7933255784746488559}
   - component: {fileID: 3789513090975409502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front Right Wheel Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4658,7 +4869,7 @@ GameObject:
   - component: {fileID: 2803047810577732481}
   - component: {fileID: 8106767755420418829}
   - component: {fileID: 7455189133079302256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rear Left Wheel Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +5053,7 @@ GameObject:
   - component: {fileID: 8427409577761384768}
   - component: {fileID: 6915068458620631722}
   - component: {fileID: 8418463589764245755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,6 +5103,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4913,9 +5126,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3835641064645789074
 GameObject:
@@ -4949,7 +5164,7 @@ Transform:
   m_GameObject: {fileID: 3835641064645789074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49947944, y: 0.9505424, z: 0.27362385}
+  m_LocalPosition: {x: -112.49948, y: 0.9505424, z: -75.72638}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5171,7 +5386,7 @@ GameObject:
   - component: {fileID: 2742439729512983808}
   - component: {fileID: 4915440276440775767}
   - component: {fileID: 4135587510949529327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5221,6 +5436,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5242,9 +5459,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3924723671222425571
 GameObject:
@@ -5258,7 +5477,7 @@ GameObject:
   - component: {fileID: 6219262280773910450}
   - component: {fileID: 1962953387558029110}
   - component: {fileID: 2051518111596230344}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5308,6 +5527,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5330,9 +5551,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2051518111596230344
 BoxCollider:
@@ -5366,7 +5589,7 @@ GameObject:
   - component: {fileID: 3682488005865082273}
   - component: {fileID: 5078378526094587334}
   - component: {fileID: 1671707082351238009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right High Beam Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5396,14 +5619,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4146413549646074806}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 40
   m_Range: 40
   m_SpotAngle: 120
   m_InnerSpotAngle: 40
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -5448,7 +5671,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -5465,17 +5688,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &4256038002526577787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,7 +5716,7 @@ GameObject:
   - component: {fileID: 6823950370600897562}
   - component: {fileID: 3767078487635028003}
   - component: {fileID: 4189671073685002214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Seat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5537,6 +5766,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5559,9 +5790,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4354857710877285531
 GameObject:
@@ -5574,7 +5807,7 @@ GameObject:
   - component: {fileID: 7429911310866732980}
   - component: {fileID: 896543589013335669}
   - component: {fileID: 6995622446045395437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Placeholder Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5624,6 +5857,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5645,9 +5880,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4448722796161319951
 GameObject:
@@ -5660,7 +5897,7 @@ GameObject:
   - component: {fileID: 6429824171659082887}
   - component: {fileID: 2509569460185342153}
   - component: {fileID: 3937524925999314393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5710,6 +5947,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5731,9 +5970,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4558020273363703055
 GameObject:
@@ -5744,7 +5985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6081138992133660442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5794,7 +6035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4724626243938247754
 Transform:
   m_ObjectHideFlags: 0
@@ -5957,6 +6198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a076c17fe76165e4f8ed21498b877bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Easing: 0
   Modifiers: []
   references:
     version: 2
@@ -6024,7 +6266,7 @@ GameObject:
   - component: {fileID: 8065963865579418777}
   - component: {fileID: 2164174768900000141}
   - component: {fileID: 234592148700497693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Dashboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6074,6 +6316,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6096,9 +6340,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4672028135649428663
 GameObject:
@@ -6111,7 +6357,7 @@ GameObject:
   - component: {fileID: 5587852219827915233}
   - component: {fileID: 1124649192759608643}
   - component: {fileID: 4806434530774490251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6193,7 +6439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1832672180199724022
 Transform:
   m_ObjectHideFlags: 0
@@ -6323,7 +6569,7 @@ GameObject:
   - component: {fileID: 8555642888644367360}
   - component: {fileID: 968373341222622131}
   - component: {fileID: 9144456089397307157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bumper Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6373,6 +6619,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6394,9 +6642,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4919075484537545102
 GameObject:
@@ -6409,7 +6659,7 @@ GameObject:
   - component: {fileID: 8293736079751258473}
   - component: {fileID: 6503852187016983757}
   - component: {fileID: 6287928314532018068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arch Front Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6459,6 +6709,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6480,10 +6732,140 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5039113809593252579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3639063065957680964}
+  - component: {fileID: 4630811752243432713}
+  - component: {fileID: 6664870926152437991}
+  m_Layer: 6
+  m_Name: CamaraTrasera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3639063065957680964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039113809593252579}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.6992421, y: -0.6992421, z: -0.10516872, w: -0.10516869}
+  m_LocalPosition: {x: 0, y: 2, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2190837854687154432}
+  m_LocalEulerAnglesHint: {x: 0, y: -197.107, z: 90}
+--- !u!20 &4630811752243432713
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039113809593252579}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 94
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: f4cfb4dffe9bdf148bf8c5838a2ca94b, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &6664870926152437991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039113809593252579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &5062045037295392432
 GameObject:
   m_ObjectHideFlags: 0
@@ -6495,7 +6877,7 @@ GameObject:
   - component: {fileID: 2459945231595278050}
   - component: {fileID: 1862241871397353024}
   - component: {fileID: 3980301274539398896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Splitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6545,6 +6927,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6566,9 +6950,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5114058936480476743
 GameObject:
@@ -6581,7 +6967,7 @@ GameObject:
   - component: {fileID: 8089102525981962028}
   - component: {fileID: 3777056602158557867}
   - component: {fileID: 3317874837324368055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Handbrake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6631,6 +7017,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6654,9 +7042,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5167311911844555378
 GameObject:
@@ -6669,7 +7059,7 @@ GameObject:
   - component: {fileID: 2948112672977672143}
   - component: {fileID: 6783186705427655122}
   - component: {fileID: 4630657920775247408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arch Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6719,6 +7109,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6740,9 +7132,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5167710379816636187
 GameObject:
@@ -6755,7 +7149,7 @@ GameObject:
   - component: {fileID: 8182704999228160933}
   - component: {fileID: 3507444035234597341}
   - component: {fileID: 5388291746149799845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Mesh Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6806,6 +7200,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6829,9 +7225,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5246016256980616710
 GameObject:
@@ -6844,7 +7242,7 @@ GameObject:
   - component: {fileID: 2074533541585509664}
   - component: {fileID: 6953637231412253464}
   - component: {fileID: 2202040396673337790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light Low Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6894,6 +7292,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6915,9 +7315,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5349332271130306866
 GameObject:
@@ -6931,7 +7333,7 @@ GameObject:
   - component: {fileID: 5303806469237837594}
   - component: {fileID: 3241169175567356974}
   - component: {fileID: 5194916395045090601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6986,6 +7388,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7008,9 +7412,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &5194916395045090601
 MeshCollider:
@@ -7045,7 +7451,7 @@ GameObject:
   - component: {fileID: 292560942346706986}
   - component: {fileID: 9005436994404530477}
   - component: {fileID: 3873615455997167065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7095,6 +7501,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7116,9 +7524,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5508729196543395354
 GameObject:
@@ -7131,7 +7541,7 @@ GameObject:
   - component: {fileID: 3639029797081042991}
   m_Layer: 0
   m_Name: Electric Truck - Ready To Drive
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7164,7 +7574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269272602382425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cockpit Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7197,7 +7607,7 @@ GameObject:
   - component: {fileID: 5585607795296433967}
   - component: {fileID: 7542518761221423582}
   - component: {fileID: 2287299360896999665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Headlight Low Beam Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7247,6 +7657,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7268,9 +7680,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5634751490385230722
 GameObject:
@@ -7283,7 +7697,7 @@ GameObject:
   - component: {fileID: 7340193829197857293}
   - component: {fileID: 1186281230101049945}
   - component: {fileID: 5939488093550589593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Drivetrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7333,6 +7747,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7354,9 +7770,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5650161689295298917
 GameObject:
@@ -7367,7 +7785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7264999774272141626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7420,7 +7838,7 @@ GameObject:
   - component: {fileID: 4994108791959024643}
   - component: {fileID: 403144169857420589}
   - component: {fileID: 4429864871235722849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Steering Wheel Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7470,6 +7888,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7491,9 +7911,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5777837301435365275
 GameObject:
@@ -7520,7 +7942,7 @@ Transform:
   m_GameObject: {fileID: 5777837301435365275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.840587, z: -14.305755}
+  m_LocalPosition: {x: -112, y: 5.840587, z: -90.305756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7543,7 +7965,7 @@ GameObject:
   - component: {fileID: 6148196376959565513}
   - component: {fileID: 1984153291129622137}
   - component: {fileID: 2478651846314488011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7593,6 +8015,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7614,9 +8038,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5912642342246894175
 GameObject:
@@ -7629,7 +8055,7 @@ GameObject:
   - component: {fileID: 445936992559371783}
   - component: {fileID: 4351181133572536398}
   - component: {fileID: 9189169001814181980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right Inner Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7679,6 +8105,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7700,9 +8128,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5979027500753264859
 GameObject:
@@ -7715,7 +8145,7 @@ GameObject:
   - component: {fileID: 6024623797385024721}
   - component: {fileID: 1780187280937034579}
   - component: {fileID: 8964008930582004896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Front Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7765,6 +8195,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7786,9 +8218,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6050894021001738903
 GameObject:
@@ -7801,7 +8235,7 @@ GameObject:
   - component: {fileID: 746362840018692187}
   - component: {fileID: 7746172932658049927}
   - component: {fileID: 1563141650181752977}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Placeholder Front Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7851,6 +8285,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7872,9 +8308,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6332918944384558823
 GameObject:
@@ -7887,7 +8325,7 @@ GameObject:
   - component: {fileID: 2266159469878428924}
   - component: {fileID: 3544480057277007882}
   - component: {fileID: 2353029511465781523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Windshield Rear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7937,6 +8375,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7958,9 +8398,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6517227258366980628
 GameObject:
@@ -7971,7 +8413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3289728240619906479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Misc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8006,7 +8448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7531869926155063643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spotlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8043,7 +8485,7 @@ GameObject:
   - component: {fileID: 1094631385931550171}
   - component: {fileID: 881684646927247579}
   - component: {fileID: 5832357028554993984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Brake Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8093,6 +8535,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8114,9 +8558,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6998629203428280908
 GameObject:
@@ -8129,7 +8575,7 @@ GameObject:
   - component: {fileID: 3965089915869682199}
   - component: {fileID: 2388072553151695831}
   - component: {fileID: 2725460492864455855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8179,6 +8625,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8200,9 +8648,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7157751173415512525
 GameObject:
@@ -8215,7 +8665,7 @@ GameObject:
   - component: {fileID: 2341077557324508101}
   - component: {fileID: 5434991733499297742}
   - component: {fileID: 6427129648389304828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Headlight High Beam Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8265,6 +8715,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8286,9 +8738,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7160527162160792573
 GameObject:
@@ -8301,7 +8755,7 @@ GameObject:
   - component: {fileID: 3708079545394170214}
   - component: {fileID: 6860916600998150652}
   - component: {fileID: 6525135231894686309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Mesh Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8352,6 +8806,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8375,9 +8831,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7205710107280986721
 GameObject:
@@ -8407,8 +8865,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7205710107280986721}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09956492, y: -0.0000000060513723, z: 6.0551303e-10, w: 0.9950311}
-  m_LocalPosition: {x: 0, y: -3.0506816, z: 7.677422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.44999695, y: -4.3305874, z: 14.475754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8445,15 +8903,15 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8509,7 +8967,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -8517,6 +8974,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!114 &450813079566151370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8560,7 +9018,7 @@ GameObject:
   - component: {fileID: 2529558110374826883}
   - component: {fileID: 7048691885316272029}
   - component: {fileID: 7405713402996253642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8610,6 +9068,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8632,9 +9092,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7280329202629158491
 GameObject:
@@ -8647,7 +9109,7 @@ GameObject:
   - component: {fileID: 9192488658790552248}
   - component: {fileID: 1713802805229970894}
   - component: {fileID: 5876865958350293928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trunk Hatch Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8697,6 +9159,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8718,9 +9182,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7412686594507081307
 GameObject:
@@ -8733,7 +9199,7 @@ GameObject:
   - component: {fileID: 8016798554316517182}
   - component: {fileID: 7971116746702588964}
   - component: {fileID: 2511689437528757254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Headlight Low Beam Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8783,6 +9249,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8804,9 +9272,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7515445086234974703
 GameObject:
@@ -8817,7 +9287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1788116105604365395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bumpers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8852,7 +9322,7 @@ GameObject:
   - component: {fileID: 6032977870536444560}
   - component: {fileID: 8035998112356627028}
   - component: {fileID: 9084866394718609922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Reverse Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8902,6 +9372,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8923,9 +9395,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7609349842841038549
 GameObject:
@@ -8938,7 +9412,7 @@ GameObject:
   - component: {fileID: 4403815711021428908}
   - component: {fileID: 2320334813614472877}
   - component: {fileID: 8306203429496925398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Current Speed (TMP) - Dashboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8984,6 +9458,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9005,9 +9481,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8306203429496925398
 MonoBehaviour:
@@ -9067,6 +9545,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -9113,7 +9592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2312292322347002357}
   - component: {fileID: 4837645029861028347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tire Sounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9243,7 +9722,7 @@ GameObject:
   - component: {fileID: 8601144743210501636}
   - component: {fileID: 5571993180428171707}
   - component: {fileID: 4480091605857828275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9293,6 +9772,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9314,9 +9795,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7858236674358438490
 GameObject:
@@ -9328,7 +9811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5855075741803869284}
   - component: {fileID: 481477781435179464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9382,7 +9865,7 @@ GameObject:
   - component: {fileID: 6696947619321841342}
   - component: {fileID: 6853076331330138216}
   - component: {fileID: 7317472174259813973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Mesh Front Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9432,6 +9915,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9455,9 +9940,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8020786571868621166
 GameObject:
@@ -9470,7 +9957,7 @@ GameObject:
   - component: {fileID: 1999900770538190008}
   - component: {fileID: 3953868329346359616}
   - component: {fileID: 1769935714311398457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Windshield Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9520,6 +10007,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9541,9 +10030,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8091363504168988477
 GameObject:
@@ -9556,7 +10047,7 @@ GameObject:
   - component: {fileID: 5633883700143693319}
   - component: {fileID: 1073013444049727084}
   - component: {fileID: 7010789494942528622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9606,6 +10097,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9627,9 +10120,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8097323783008229070
 GameObject:
@@ -9642,7 +10137,7 @@ GameObject:
   - component: {fileID: 801961618639537328}
   - component: {fileID: 5844987516747373734}
   - component: {fileID: 3345168884362418265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arch Front Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9692,6 +10187,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9713,9 +10210,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8097927986862009415
 GameObject:
@@ -9728,7 +10227,7 @@ GameObject:
   - component: {fileID: 1142770689660981301}
   - component: {fileID: 4904794815470579892}
   - component: {fileID: 3510977749617223859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Low Beam Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9758,14 +10257,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097927986862009415}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 99.368744
   m_InnerSpotAngle: 91.413185
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -9810,7 +10309,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -9827,17 +10326,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &8177245919453520121
 GameObject:
   m_ObjectHideFlags: 0
@@ -9851,7 +10356,7 @@ GameObject:
   - component: {fileID: 1595195961086301154}
   - component: {fileID: 4883629121201559150}
   - component: {fileID: 3127087627362391020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9968,7 +10473,7 @@ GameObject:
   - component: {fileID: 4256850308264226942}
   - component: {fileID: 3387599864495688585}
   - component: {fileID: 5019689491452528180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Left Inner Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10018,6 +10523,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10039,9 +10546,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8258851496869704440
 GameObject:
@@ -10054,7 +10563,7 @@ GameObject:
   - component: {fileID: 4180300794836638236}
   - component: {fileID: 2498724684053851779}
   - component: {fileID: 2445173080560698477}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Reverse Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10104,6 +10613,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10125,9 +10636,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8368492657608441988
 GameObject:
@@ -10139,7 +10652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4408207375879778095}
   - component: {fileID: 5552875005171502112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Acceleration Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10229,7 +10742,7 @@ GameObject:
   - component: {fileID: 3222813298473382458}
   - component: {fileID: 5831920338643603734}
   - component: {fileID: 5638078081498868027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10279,6 +10792,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10300,9 +10815,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8446836557222051148
 GameObject:
@@ -10314,7 +10831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2621329440066988898}
   - component: {fileID: 9149682516513414091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10368,7 +10885,7 @@ GameObject:
   - component: {fileID: 6892916917717089241}
   - component: {fileID: 6553552730760949283}
   - component: {fileID: 2198937699559887445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Placeholder Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10418,6 +10935,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10439,9 +10958,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8533662654254091523
 GameObject:
@@ -10454,7 +10975,7 @@ GameObject:
   - component: {fileID: 5967076079620788139}
   - component: {fileID: 4771077872223843931}
   - component: {fileID: 4739850091498365263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Steering Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10504,6 +11025,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10525,9 +11048,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8541337718106928078
 GameObject:
@@ -10588,6 +11113,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -10736,6 +11262,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -10780,7 +11307,7 @@ GameObject:
   - component: {fileID: 6753193013870030101}
   - component: {fileID: 5438455250594407425}
   - component: {fileID: 7414983398013845009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Arch Rear Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10830,6 +11357,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10851,9 +11380,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8707384660738194149
 GameObject:
@@ -10867,7 +11398,7 @@ GameObject:
   - component: {fileID: 8730340399391658116}
   - component: {fileID: 587288748045584389}
   - component: {fileID: 1006416525169757237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10963,7 +11494,7 @@ GameObject:
   - component: {fileID: 1351366937982038856}
   - component: {fileID: 4762772802601304281}
   - component: {fileID: 3351279398157303408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Turn Signal Front Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11013,6 +11544,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11034,9 +11567,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8762135494674326839
 GameObject:
@@ -11141,6 +11676,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -11183,7 +11719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8802345786186525561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11220,7 +11756,7 @@ GameObject:
   - component: {fileID: 8917895740616771620}
   - component: {fileID: 976129335308135613}
   - component: {fileID: 223744288223293905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11295,7 +11831,7 @@ GameObject:
   - component: {fileID: 1169610934140035303}
   - component: {fileID: 7117655538448098836}
   - component: {fileID: 1760021684498350807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left Low Beam Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11325,14 +11861,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9002717500600719476}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 99.368744
   m_InnerSpotAngle: 91.413185
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -11377,7 +11913,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -11394,17 +11930,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &9009921670541305709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11416,7 +11958,7 @@ GameObject:
   - component: {fileID: 120721527947844686}
   - component: {fileID: 4488734287201089190}
   - component: {fileID: 2443859881564970306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light Brake Rear Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11466,6 +12008,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11487,9 +12031,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &9084049205913850222
 GameObject:
@@ -11502,7 +12048,7 @@ GameObject:
   - component: {fileID: 3430047065862983819}
   - component: {fileID: 7886234635319432511}
   - component: {fileID: 5020507287849224945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Light Handbrake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11552,6 +12098,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11573,9 +12121,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &9142827650839442516
 GameObject:
@@ -11588,7 +12138,7 @@ GameObject:
   - component: {fileID: 1029453878055508964}
   - component: {fileID: 8862547809988155032}
   - component: {fileID: 5159326077222769175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Right Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11638,6 +12188,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11660,9 +12212,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &9193887988137241317
 GameObject:
@@ -11675,7 +12229,7 @@ GameObject:
   - component: {fileID: 4309448731496447515}
   - component: {fileID: 4020584349542549943}
   - component: {fileID: 4438521688532127995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Interior Lever Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11725,6 +12279,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11746,7 +12302,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}

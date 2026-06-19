@@ -71,6 +71,10 @@ namespace Ezereal
 
         [SerializeField] float speedFactor = 0f; // Leave at zero. Responsible for smooth acceleration and near-top-speed slowdown.
 
+        // Variables de respaldo para procesar la entrada WASD de forma nativa e independiente
+        private float rawInputAcceleration = 0f;
+        private float rawInputBrake = 0f;
+
         private void Awake()
         {
             wheels = new WheelCollider[]
@@ -155,14 +159,12 @@ namespace Ezereal
                 rearLeftWheelCollider.motorTorque = 0;
                 rearRightWheelCollider.motorTorque = 0;
             }
-
-
         }
 
         void OnAccelerate(InputValue accelerationValue)
         {
-            currentAccelerationValue = accelerationValue.Get<float>();
-            //Debug.Log("Acceleration: " + currentAccelerationValue.ToString());
+            // Guardamos la presión física de la tecla 'W' (Acelerador estándar)
+            rawInputAcceleration = accelerationValue.Get<float>();
         }
 
         void Acceleration()
@@ -212,24 +214,25 @@ namespace Ezereal
                 {
                     if (currentAccelerationValue > 0f && currentSpeed > -maxReverseSpeed)
                     {
-                        currentAccelerationValue = 1; //Invert Acceleration value
+                        // Mantenemos la inversión nativa que calcula el asset para sus marchas traseras
+                        float internalAcceleration = 1f * currentAccelerationValue; 
 
                         if (driveType == DriveTypes.RWD)
                         {
-                            rearLeftWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
-                            rearRightWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
+                            rearLeftWheelCollider.motorTorque = -internalAcceleration * horsePower;
+                            rearRightWheelCollider.motorTorque = -internalAcceleration * horsePower;
                         }
                         else if (driveType == DriveTypes.FWD)
                         {
-                            frontLeftWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
-                            frontRightWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
+                            frontLeftWheelCollider.motorTorque = -internalAcceleration * horsePower;
+                            frontRightWheelCollider.motorTorque = -internalAcceleration * horsePower;
                         }
                         else if (driveType == DriveTypes.AWD)
                         {
-                            frontLeftWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
-                            frontRightWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
-                            rearLeftWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
-                            rearRightWheelCollider.motorTorque = -currentAccelerationValue * horsePower;
+                            frontLeftWheelCollider.motorTorque = -internalAcceleration * horsePower;
+                            frontRightWheelCollider.motorTorque = -internalAcceleration * horsePower;
+                            rearLeftWheelCollider.motorTorque = -internalAcceleration * horsePower;
+                            rearRightWheelCollider.motorTorque = -internalAcceleration * horsePower;
                         }
 
                     }
@@ -248,20 +251,8 @@ namespace Ezereal
 
         void OnBrake(InputValue brakeValue)
         {
-            currentBrakeValue = brakeValue.Get<float>();
-            //Debug.Log("Brake:" + currentBrakeValue.ToString());
-
-            if (isStarted && ezerealLightController != null)
-            {
-                if (currentBrakeValue > 0)
-                {
-                    ezerealLightController.BrakeLightsOn();
-                }
-                else
-                {
-                    ezerealLightController.BrakeLightsOff();
-                }
-            }
+            // Guardamos la presión física de la tecla 'S' (Freno estándar)
+            rawInputBrake = brakeValue.Get<float>();
         }
 
         void Braking()
@@ -319,8 +310,6 @@ namespace Ezereal
                 rearRightWheelCollider.motorTorque = 0;
                 rearLeftWheelCollider.brakeTorque = currentHandbrakeValue * handbrakeForce;
                 rearRightWheelCollider.brakeTorque = currentHandbrakeValue * handbrakeForce;
-
-
             }
             else
             {
@@ -364,58 +353,67 @@ namespace Ezereal
             }
         }
 
-        void OnDownShift()
-        {
-            switch (currentGear)
-            {
-                case AutomaticGears.Reverse:
-                    //Debug.Log("Reverse, can't go any lower");
-                    break;
+        // Dejamos las funciones manuales intactas para evitar errores de compilación con las llamadas de Unity Action Maps
+        void OnDownShift() {}
+        void OnUpShift() {}
 
-                case AutomaticGears.Neutral:
-                    currentGear--;
+        private void FixedUpdate()
+        {
+            // ==========================================
+            // 🔥 ADAPTADOR DE TRANSMISIÓN AUTOMÁTICA ARCADE (WASD) 🔥
+            // ==========================================
+            if (currentGear == AutomaticGears.Drive)
+            {
+                // Comportamiento normal: W acelera, S frena
+                currentAccelerationValue = rawInputAcceleration;
+                currentBrakeValue = rawInputBrake;
+
+                // Si el camión se detiene completamente y el jugador mantiene pulsado S (Atrás)
+                if (stationary && rawInputBrake > 0.1f && rawInputAcceleration == 0f)
+                {
+                    currentGear = AutomaticGears.Reverse;
                     UpdateGearText("R");
                     if (isStarted && ezerealLightController != null)
                     {
                         ezerealLightController.ReverseLightsOn();
                     }
-                    break;
-
-                case AutomaticGears.Drive:
-                    currentGear--;
-                    UpdateGearText("N");
-                    break;
+                }
             }
-        }
-
-        void OnUpShift()
-        {
-            switch (currentGear)
+            else if (currentGear == AutomaticGears.Reverse)
             {
-                case AutomaticGears.Reverse:
-                    currentGear++;
-                    UpdateGearText("N");
+                // Comportamiento invertido: S manda potencia al motor de marcha atrás, W activa el freno mecánico
+                currentAccelerationValue = rawInputBrake;
+                currentBrakeValue = rawInputAcceleration;
 
+                // Si el camión retrocediendo llega a detenerse del todo y el jugador pulsa W (Adelante)
+                if (stationary && rawInputAcceleration > 0.1f && rawInputBrake == 0f)
+                {
+                    currentGear = AutomaticGears.Drive;
+                    UpdateGearText("D");
                     if (isStarted && ezerealLightController != null)
                     {
                         ezerealLightController.ReverseLightsOff();
                     }
-
-                    break;
-                case AutomaticGears.Neutral:
-                    currentGear++;
-                    UpdateGearText("D");
-                    break;
-                case AutomaticGears.Drive:
-                    //Debug.Log("Drive, can't go any higher");
-                    break;
+                }
             }
-        }
+            else
+            {
+                // Si por algún motivo está en Neutral (N), reconducimos la tracción al pulsar W
+                if (rawInputAcceleration > 0.1f)
+                {
+                    currentGear = AutomaticGears.Drive;
+                    UpdateGearText("D");
+                }
+            }
 
+            // Gestión unificada y contextual de las luces de freno traseras
+            if (isStarted && ezerealLightController != null)
+            {
+                if (currentBrakeValue > 0f) ezerealLightController.BrakeLightsOn();
+                else ezerealLightController.BrakeLightsOff();
+            }
+            // ==========================================
 
-
-        private void FixedUpdate()
-        {
             Acceleration();
 
             Braking();
@@ -454,9 +452,7 @@ namespace Ezereal
                 currentSpeed *= 3.6f; 
                 UpdateSpeedText(currentSpeed);
 #endif
-
             }
-
 
             FrontLeftWheelRPM = frontLeftWheelCollider.rpm;
             FrontRightWheelRPM = frontRightWheelCollider.rpm;
@@ -470,9 +466,9 @@ namespace Ezereal
             mesh.SetPositionAndRotation(position, rotation);
         }
 
-
         void RotateSteeringWheel()
         {
+            if (steeringWheel == null) return;
             float currentXAngle = steeringWheel.transform.localEulerAngles.x; // Maximum steer angle in degrees
 
             // Calculate the rotation based on the steer angle
@@ -485,20 +481,21 @@ namespace Ezereal
 
         void UpdateGearText(string gear)
         {
-            currentGearTMP_UI.text = gear;
-            currentGearTMP_Dashboard.text = gear;
+            if (currentGearTMP_UI != null) currentGearTMP_UI.text = gear;
+            if (currentGearTMP_Dashboard != null) currentGearTMP_Dashboard.text = gear;
         }
 
         void UpdateSpeedText(float speed)
         {
             speed = Mathf.Abs(speed);
 
-            currentSpeedTMP_UI.text = speed.ToString("F0");
-            currentSpeedTMP_Dashboard.text = speed.ToString("F0");
+            if (currentSpeedTMP_UI != null) currentSpeedTMP_UI.text = speed.ToString("F0");
+            if (currentSpeedTMP_Dashboard != null) currentSpeedTMP_Dashboard.text = speed.ToString("F0");
         }
 
         void UpdateAccelerationSlider()
         {
+            if (accelerationSlider == null) return;
             if (currentGear == AutomaticGears.Drive || currentGear == AutomaticGears.Reverse)
             {
                 accelerationSlider.value = Mathf.Lerp(accelerationSlider.value, currentAccelerationValue, Time.deltaTime * 15f);

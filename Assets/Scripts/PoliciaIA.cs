@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
@@ -21,6 +22,18 @@ public class PoliciaIA : MonoBehaviour
 
     [Tooltip("Arrastra aquí el objeto IconoPolicia de la UI para rastrear este coche")]
     public IndicadorMinimapa indicadorRadarPolicia;
+
+    [Header("Condición de Derrota (Arresto)")]
+    [Tooltip("Distancia (Y) en metros a la que el policía empieza a arrestarte")]
+    public float distanciaCaptura = 6f; 
+    [Tooltip("Tiempo (X) en segundos que debes permanecer cerca para perder")]
+    public float tiempoParaCaptura = 3f; 
+
+    [Tooltip("Arrastra aquí el PanelGameOver que creaste en el Canvas")]
+    public GameObject panelGameOver;
+
+    private float cronometroCaptura = 0f;
+    private bool juegoTerminado = false;
 
     private NavMeshAgent agent;
     private Rigidbody rb;
@@ -47,26 +60,39 @@ public class PoliciaIA : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+void FixedUpdate()
     {
-        if (jugador == null) return;
+        if (jugador == null || juegoTerminado) return; // Si el juego terminó, la IA deja de pensar
 
-        // --- ESTADO DE ESCAPE (MARCHA ATRÁS) ---
+        // 1. Calculamos la distancia SIEMPRE al principio del todo (antes de movernos)
+        float distanciaAlJugador = Vector3.Distance(transform.position, jugador.position);
+        //: {distanciaAlJugador:F1} metros");
+
+        // 2. Comprobamos la condición de Derrota
+        ComprobarArresto(distanciaAlJugador);
+
+        // 3. 🔥 LA REGLA DE ORO: Si está tocando/acorralando al jugador, prohibido ir hacia atrás
+        if (distanciaAlJugador <= distanciaCaptura)
+        {
+            marchandoAtras = false;
+            cronometroAtascado = 0f; // Reiniciamos el contador para que no se estrese
+        }
+
+        // 4. --- ESTADO DE ESCAPE (MARCHA ATRÁS) ---
         if (marchandoAtras)
         {
             EjecutarManiobraDeEscape();
-            return; // Saltamos el resto del código para que no intente avanzar a la vez
+            MitigarVelocidadLateral();
+            return; 
         }
 
-        // --- ESTADO NORMAL (PERSECUCIÓN) ---
+        // 5. --- ESTADO NORMAL (PERSECUCIÓN) ---
         agent.SetDestination(jugador.position);
         agent.nextPosition = transform.position;
 
         Vector3 siguienteEsquina = agent.steeringTarget;
         Vector3 direccionHaciaEsquina = siguienteEsquina - transform.position;
         direccionHaciaEsquina.y = 0; 
-
-        float distanciaAlJugador = Vector3.Distance(transform.position, jugador.position);
 
         if (distanciaAlJugador > distanciaFrenado)
         {
@@ -76,8 +102,10 @@ public class PoliciaIA : MonoBehaviour
         else
         {
             Frenar();
-            cronometroAtascado = 0f; // Si frena a propósito, no cuenta como atascado
+            cronometroAtascado = 0f; 
         }
+
+        MitigarVelocidadLateral();
     }
 
     void GirarYConducir(Vector3 direccion)
@@ -142,10 +170,60 @@ public class PoliciaIA : MonoBehaviour
         // 2. Giramos el volante mientras vamos marcha atrás para desenganchar el parachoques de la pared
         // Girar sobre el eje Y un poco en cada frame simula el giro de las ruedas
         transform.Rotate(Vector3.up * 50f * Time.fixedDeltaTime);
+        
     }
 
     void Frenar()
     {
         rb.linearVelocity = Vector3.Lerp(rb.linearVelocity, Vector3.zero, 4f * Time.fixedDeltaTime);
+    }
+
+    void MitigarVelocidadLateral()
+{
+    Vector3 velocidadLocal = transform.InverseTransformDirection(rb.linearVelocity);
+
+    velocidadLocal.x *= 0.1f; 
+
+    rb.linearVelocity = transform.TransformDirection(velocidadLocal);
+}
+
+void ComprobarArresto(float distanciaAlJugador)
+    {
+        // Si ya hemos perdido, no seguimos calculando
+        if (juegoTerminado) return;
+
+        // ¿Está la policía lo suficientemente cerca (Y metros)?
+        if (distanciaAlJugador <= distanciaCaptura)
+        {
+            // El tiempo (X) empieza a correr en contra del jugador
+            cronometroCaptura += Time.fixedDeltaTime;
+
+            // Debug visual para la consola (opcional, te ayudará a ver cómo sube)
+            Debug.Log($"🚨 ¡Te están arrestando! Tiempo: {cronometroCaptura:F1}s / {tiempoParaCaptura}s");
+
+            if (cronometroCaptura >= tiempoParaCaptura)
+            {
+                // ¡CONDICIÓN DE DERROTA CUMPLIDA!
+                juegoTerminado = true;
+                Debug.Log("🚔 ¡Busted! HAS SIDO ARRESTADO. Fin de la partida.");
+                
+                // Aquí puedes pausar el tiempo para que todo se congele
+                Time.timeScale = 0f; 
+                if (panelGameOver != null)
+                    {
+                        panelGameOver.SetActive(true);
+                    }
+                // TODO: Más adelante aquí activaremos el Canvas de Game Over
+            }
+        }
+        else
+        {
+            // Si el jugador consigue alejarse más de Y metros, el contador se reinicia instantáneamente
+            if (cronometroCaptura > 0f)
+            {
+                cronometroCaptura = 0f;
+                Debug.Log("💨 ¡Te has zafado de la policía por los pelos!");
+            }
+        }
     }
 }

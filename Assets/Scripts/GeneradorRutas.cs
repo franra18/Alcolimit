@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Añadido para poder reiniciar el nivel
 
 public class GeneradorRutas : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class GeneradorRutas : MonoBehaviour
     public int nodoFin = 19;
     public int longitudMinima = 5;
     public int longitudMaxima = 10;
+
+    [Header("Gestor de Victoria (UI)")]
+    [Tooltip("Arrastra aquí el PanelVictoria que creaste en el Canvas")]
+    public GameObject panelVictoria;
+    
+    // Variable interna para que no salte la victoria dos veces
+    private bool nivelCompletado = false; 
 
     private Dictionary<int, List<int>> grafo = new Dictionary<int, List<int>>()
     {
@@ -74,5 +82,38 @@ public class GeneradorRutas : MonoBehaviour
                 rutaActual.RemoveAt(rutaActual.Count - 1);
             }
         }
+    }
+
+    // ==========================================
+    // 🔥 LÓGICA DE VICTORIA INTEGRADA 🔥
+    // ==========================================
+
+    // Esta función la llamará el último checkpoint cuando el coche lo pise
+    public void CompletarNivel()
+    {
+        if (nivelCompletado) return;
+
+        nivelCompletado = true;
+        Debug.Log("🏆 ¡VICTORIA! Has llegado al nodo 19 y escapado de la policía.");
+
+        // Congelamos las físicas y el movimiento del juego
+        Time.timeScale = 0f;
+
+        // Activamos la pantalla de celebración
+        if (panelVictoria != null)
+        {
+            panelVictoria.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ GeneradorRutas: No has asignado el PanelVictoria en el Inspector.");
+        }
+    }
+
+    // Función pública para asignar al botón "Siguiente Nivel / Reiniciar" en la UI
+    public void ReiniciarOSiguienteNivel()
+    {
+        Time.timeScale = 1f; // Devolvemos el tiempo a la normalidad
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 }
