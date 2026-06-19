@@ -1,0 +1,12 @@
+{
+    "asset": "e65778231af09b344a6d94a692ff18e6",
+    "fileName": "019ee0df-5257-7d4b-b1c7-7b0da9760e72.pose.json",
+    "prompt": "A humanoid character performing a happy, energetic dancing motion, loopable, in-place.",
+    "negativePrompt": "",
+    "model": "unity-text-to-motion",
+    "modelName": "Text to Motion",
+    "customSeed": 1424671285,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "isTrimmed": false
+}

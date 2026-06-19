@@ -3,8 +3,7 @@
 
 **Fran**
 - Duplicar gente bar
-- Mejorar apariencia vomito/pis
-- 
+- Mejorar apariencia espejo 
 - Crear menú de inicio -> Hay que meter sonidos primero
 - HUD
 
