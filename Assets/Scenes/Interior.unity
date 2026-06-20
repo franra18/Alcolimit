@@ -7040,7 +7040,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &115008908
 Transform:
   m_ObjectHideFlags: 0
@@ -10321,7 +10321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteractable
   promptText: Presiona [E] para Salir
-  nextSceneName: Exterior
 --- !u!65 &170837377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -110583,7 +110582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1764772189
 Transform:
   m_ObjectHideFlags: 0
