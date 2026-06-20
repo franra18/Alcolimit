@@ -26,17 +26,26 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private float borderSize = 8f;
 
     private Camera playerCamera;
+    private GameObject crosshairInstance;
     private SistemaAlcohol sistemaAlcohol;
     private TMPro.TextMeshProUGUI promptText;
 
     private void OnEnable()
     {
         interactAction.Enable();
+
+        // Muestra la mirilla y el texto al activarse
+        if (crosshairInstance != null) crosshairInstance.SetActive(true);
+        if (promptText != null) promptText.gameObject.SetActive(true);
     }
 
     private void OnDisable()
     {
         interactAction.Disable();
+
+        // Oculta la mirilla y el texto por completo al desactivarse
+        if (crosshairInstance != null) crosshairInstance.SetActive(false);
+        if (promptText != null) promptText.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -66,11 +75,11 @@ public class PlayerInteraction : MonoBehaviour
             GameObject canvasObj = new GameObject("InteractionCanvas");
             canvas = canvasObj.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            
+
             var scaler = canvasObj.AddComponent<UnityEngine.UI.CanvasScaler>();
             scaler.uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920, 1080);
-            
+
             canvasObj.AddComponent<UnityEngine.UI.GraphicRaycaster>();
         }
 
@@ -82,30 +91,31 @@ public class PlayerInteraction : MonoBehaviour
             {
                 // Create outer border (black background)
                 GameObject crosshairBg = new GameObject("CenterCrosshair");
+                crosshairInstance = crosshairBg;
                 crosshairBg.transform.SetParent(canvas.transform, false);
-                
+
                 RectTransform bgRect = crosshairBg.AddComponent<RectTransform>();
                 bgRect.anchorMin = new Vector2(0.5f, 0.5f);
                 bgRect.anchorMax = new Vector2(0.5f, 0.5f);
                 bgRect.pivot = new Vector2(0.5f, 0.5f);
                 bgRect.anchoredPosition = Vector2.zero;
                 bgRect.sizeDelta = new Vector2(borderSize, borderSize);
-                
+
                 var bgImage = crosshairBg.AddComponent<UnityEngine.UI.Image>();
                 bgImage.color = crosshairBorderColor;
                 bgImage.raycastTarget = false; // Prevent blocking interactions
-                
+
                 // Create inner point (white dot)
                 GameObject crosshairDot = new GameObject("CenterDot");
                 crosshairDot.transform.SetParent(crosshairBg.transform, false);
-                
+
                 RectTransform dotRect = crosshairDot.AddComponent<RectTransform>();
                 dotRect.anchorMin = new Vector2(0.5f, 0.5f);
                 dotRect.anchorMax = new Vector2(0.5f, 0.5f);
                 dotRect.pivot = new Vector2(0.5f, 0.5f);
                 dotRect.anchoredPosition = Vector2.zero;
                 dotRect.sizeDelta = new Vector2(dotSize, dotSize);
-                
+
                 var dotImage = crosshairDot.AddComponent<UnityEngine.UI.Image>();
                 dotImage.color = crosshairColor;
                 dotImage.raycastTarget = false; // Prevent blocking interactions
@@ -123,23 +133,23 @@ public class PlayerInteraction : MonoBehaviour
         {
             var textObj = new GameObject("InteractionText");
             textObj.transform.SetParent(canvas.transform, false);
-            
+
             var rectTransform = textObj.AddComponent<RectTransform>();
             rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
             rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
             rectTransform.pivot = new Vector2(0.5f, 0.5f);
             rectTransform.anchoredPosition = new Vector2(0f, -100f);
             rectTransform.sizeDelta = new Vector2(600f, 100f);
-            
+
             promptText = textObj.AddComponent<TMPro.TextMeshProUGUI>();
             promptText.fontSize = 32f;
             promptText.alignment = TMPro.TextAlignmentOptions.Center;
             promptText.color = Color.white;
-            
+
             promptText.outlineWidth = 0.2f;
             promptText.outlineColor = Color.black;
         }
-        
+
         promptText.text = ""; // Start empty
     }
 
@@ -179,7 +189,7 @@ public class PlayerInteraction : MonoBehaviour
                     string nameLower = h.collider.gameObject.name.ToLower();
                     if (nameLower.Contains("wall") || nameLower.Contains("floor") || nameLower.Contains("ceiling") ||
                         nameLower.Contains("suelo") || nameLower.Contains("muro") || nameLower.Contains("pared") ||
-                        nameLower.Contains("techo") || nameLower.Contains("slab") || nameLower.Contains("door") || 
+                        nameLower.Contains("techo") || nameLower.Contains("slab") || nameLower.Contains("door") ||
                         nameLower.Contains("puerta"))
                     {
                         // Check if this structural object itself is or contains the targetInteractable (unlikely but safe)

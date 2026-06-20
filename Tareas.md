@@ -2,14 +2,14 @@
 ## Asignación de tareas
 
 **Fran**
-- Crear menú de inicio -> Hay que meter sonidos primero
-- HUD
+2. ⁠Hacer rango aleatorio y mostrarlo en la escena 
+3. ⁠Hacer viñeta control policial
+4. ⁠Meter viñetas
+6. ⁠Meter número victorias 
+7. ⁠Meter sonidos / musica
 
 **Marcos**
-- Crear npcs y hacer que se muevan aleatoriamente con lo que dimos los últimos días
-- Pedirle a la IA animación de andar para los muñecos
-- Añadir interacción con algún npc (opcional)
-- Meter sonidos y comportamientos a los npcs (hablen si hay dos cerca, pararse a beber, etc.)
+- Quitar que los NPCs puedan subir/bajar escaleras
 
 **Luis**
 - Crear más grande el mapa con lo que ya hay

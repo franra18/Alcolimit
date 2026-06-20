@@ -6,24 +6,33 @@ using UnityEngine.UI;
 
 public class MenuPausa : MonoBehaviour
 {
-    [Header("UI")]
-    public GameObject panelMenuPausa;
-    public Slider sliderSensibilidad; // Para igualar el valor inicial
+    [Header("Paneles de la UI")]
+    [SerializeField] private GameObject menuPausaPanel;
+    [SerializeField] private GameObject menuAjustesPanel;
+    [SerializeField] private GameObject canvasHUDJuego;
 
-    [Header("Referencias")]
-    public FirstPersonController jugadorController;
-    public AudioMixer audioMixer;
+    [Header("Sliders / Ajustes")]
+    [SerializeField] private Slider sliderSensibilidad;
+    [SerializeField] private AudioMixer audioMixer;
+
+    [Header("Referencias del Jugador")]
+    [SerializeField] private FirstPersonController jugadorController;
+    [SerializeField] private PlayerInteraction jugadorInteraccion;
 
     private bool estaPausado = false;
 
     private void Start()
     {
-        panelMenuPausa.SetActive(false);
+        // Al empezar la partida todo el menú debe estar completamente oculto
+        OcultarTodoElMenu();
+        if (canvasHUDJuego != null) canvasHUDJuego.SetActive(true);
 
-        // Iguala el Slider a la sensibilidad actual del personaje al iniciar
-        if (jugadorController != null && sliderSensibilidad != null)
+        // Inicializa la sensibilidad en el slider si existe el jugador
+        if (PlayerPrefs.HasKey("Sensibilidad"))
         {
-            sliderSensibilidad.value = jugadorController.mouseSensitivity;
+            float sensGuardada = PlayerPrefs.GetFloat("Sensibilidad");
+            if (jugadorController != null) jugadorController.mouseSensitivity = sensGuardada;
+            if (sliderSensibilidad != null) sliderSensibilidad.value = sensGuardada;
         }
     }
 
@@ -31,46 +40,93 @@ public class MenuPausa : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (estaPausado) Reanudar();
-            else Pausar();
+            if (estaPausado)
+            {
+                // Si está en el menú de ajustes y pulsa Escape, vuelve al menú de pausa principal
+                if (menuAjustesPanel.activeSelf)
+                {
+                    MostrarMenuPrincipalPausa();
+                }
+                else
+                {
+                    Reanudar();
+                }
+            }
+            else
+            {
+                Pausar();
+            }
         }
+    }
+
+    // --- Gestión de Navegación de Menús ---
+
+    public void Pausar()
+    {
+        estaPausado = true;
+        Time.timeScale = 0f;
+
+        MostrarMenuPrincipalPausa();
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        if (canvasHUDJuego != null) canvasHUDJuego.SetActive(false);
+
+        if (jugadorController != null) jugadorController.enabled = false;
+
+        if (jugadorInteraccion != null) jugadorInteraccion.enabled = false;
     }
 
     public void Reanudar()
     {
-        panelMenuPausa.SetActive(false);
-        Time.timeScale = 1f;
         estaPausado = false;
-        
+        Time.timeScale = 1f;
+
+        OcultarTodoElMenu();
+        if (canvasHUDJuego != null) canvasHUDJuego.SetActive(true);
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
         if (jugadorController != null) jugadorController.enabled = true;
+
+        if (jugadorInteraccion != null) jugadorInteraccion.enabled = true;
     }
 
-    public void Pausar()
+    public void AbrirAjustes()
     {
-        panelMenuPausa.SetActive(true);
-        Time.timeScale = 0f;
-        estaPausado = true;
-        
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
-        if (jugadorController != null) jugadorController.enabled = false;
+        if (menuPausaPanel != null) menuPausaPanel.SetActive(false);
+        if (menuAjustesPanel != null) menuAjustesPanel.SetActive(true);
     }
 
-    public void ReiniciarPartida()
+    public void MostrarMenuPrincipalPausa()
     {
-        Reanudar();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (menuPausaPanel != null) menuPausaPanel.SetActive(true);
+        if (menuAjustesPanel != null) menuAjustesPanel.SetActive(false);
+    }
+
+    private void OcultarTodoElMenu()
+    {
+        if (menuPausaPanel != null) menuPausaPanel.SetActive(false);
+        if (menuAjustesPanel != null) menuAjustesPanel.SetActive(false);
+    }
+
+    // --- Funciones de Botones y Configuración ---
+
+    public void SalirAlMenuPrincipal()
+    {
+        Time.timeScale = 1f; // Asegúrate de restablecer el tiempo antes de cambiar de escena
+        SceneManager.LoadScene(0); // Cambia el 0 por el índice o nombre de tu menú de inicio
     }
 
     public void AjustarVolumenMusica(float volumen)
     {
         if (audioMixer != null)
         {
-            audioMixer.SetFloat("Musica", Mathf.Log10(volumen) * 20);
+            // Evita log10(0) que daría error usando un número mínimo muy bajo
+            float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
+            audioMixer.SetFloat("Musica", volumenCalculado);
         }
     }
 
@@ -78,7 +134,8 @@ public class MenuPausa : MonoBehaviour
     {
         if (audioMixer != null)
         {
-            audioMixer.SetFloat("Efectos", Mathf.Log10(volumen) * 20);
+            float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
+            audioMixer.SetFloat("Efectos", volumenCalculado);
         }
     }
 
