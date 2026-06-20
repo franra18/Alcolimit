@@ -1,17 +1,17 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.UI; // <-- IMPORTANTE: Necesario para controlar el Slider
+using UnityEngine.UI;
 
 public class SistemaAlcohol : MonoBehaviour
 {
     [Header("Variables de Jugabilidad")]
     [Range(0f, 100f)] 
-    public float nivelDeAlcohol = 0f;
+    public float nivelDeAlcohol = 10f; // Puedes inicializarlo en 10 aquí
 
     [Header("UI Referencias")]
     [Tooltip("Arrastra aquí el Slider de la interfaz que servirá como barra de progreso")]
-    [SerializeField] private Slider barraAlcohol; // <-- Nueva variable para la barra
+    [SerializeField] private Slider barraAlcohol;
 
     [Header("Referencias")]
     [Tooltip("Arrastra aquí la Main Camera (la que es hija del CameraPivot)")]
@@ -40,19 +40,25 @@ public class SistemaAlcohol : MonoBehaviour
         if (barraAlcohol != null)
         {
             barraAlcohol.minValue = 0f;
-            barraAlcohol.maxValue = 100f; // Coincide con el rango máximo de tu variable
+            barraAlcohol.maxValue = 100f; 
             barraAlcohol.value = nivelDeAlcohol;
         }
     }
 
     private void Update()
     {
+        // Forzar límite mínimo de 10
+        if (nivelDeAlcohol < 10f)
+        {
+            nivelDeAlcohol = 10f;
+        }
+
         // Normalizamos el nivel de 0 a 1 para hacer cálculos más fáciles
         float porcentajeAlcohol = nivelDeAlcohol / 100f; 
 
         AplicarMareoCamara(porcentajeAlcohol);
         AplicarEfectosVisuales(porcentajeAlcohol);
-        ActualizarUI(); // <-- Llamamos a la actualización de la barra
+        ActualizarUI(); 
     }
 
     private void AplicarMareoCamara(float porcentaje)
