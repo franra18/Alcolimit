@@ -63,6 +63,16 @@ public class PoliciaIA : MonoBehaviour
         {
             indicadorRadarPolicia.SetObjetivo(transform);
         }
+
+        NavMeshAgent agente = GetComponent<NavMeshAgent>();
+
+    // Obligamos al agente a obedecer las variables de nuestro script
+    if (agente != null)
+    {
+        agente.speed = velocidadMaxima;
+        agente.angularSpeed = velocidadGiro;
+        agente.stoppingDistance = distanciaFrenado;
+    }
     }
 
 void FixedUpdate()
