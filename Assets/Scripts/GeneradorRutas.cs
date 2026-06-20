@@ -123,4 +123,14 @@ public class GeneradorRutas : MonoBehaviour
         Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
+
+    // Función para el botón del Menú Principal en la pantalla de Victoria
+    public void VolverAlMenuPrincipal()
+    {
+        // Descongelamos el tiempo por si el jugador ganó y el juego se paró
+        Time.timeScale = 1f; 
+        
+        // PON AQUÍ EL NOMBRE EXACTO DE TU ESCENA DEL MENÚ
+        SceneManager.LoadScene("MenuInicio"); 
+    }
 }
