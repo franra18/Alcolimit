@@ -1,20 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Añadido para poder reiniciar el nivel
+using UnityEngine.SceneManagement; 
 
 public class GeneradorRutas : MonoBehaviour
 {
-    [Header("Configuración de la Ruta")]
+    [Header("Modo de Juego")]
+    [Tooltip("Si está marcado, solo se mostrará la baliza final (Modo Libre). Si no, será una ruta guiada.")]
+    public bool modoLibre = false; // 🔥 NUESTRO INTERRUPTOR
+
+    [Header("Configuración de la Ruta Guiada")]
     public int nodoInicio = 1;
     public int nodoFin = 19;
     public int longitudMinima = 5;
     public int longitudMaxima = 10;
 
     [Header("Gestor de Victoria (UI)")]
-    [Tooltip("Arrastra aquí el PanelVictoria que creaste en el Canvas")]
     public GameObject panelVictoria;
     
-    // Variable interna para que no salte la victoria dos veces
     private bool nivelCompletado = false; 
 
     private Dictionary<int, List<int>> grafo = new Dictionary<int, List<int>>()
@@ -37,13 +39,26 @@ public class GeneradorRutas : MonoBehaviour
         {16, new List<int>{11, 17}},
         {17, new List<int>{19, 13, 16}},
         {18, new List<int>{15}},
-        {19, new List<int>()} // Meta final
+        {19, new List<int>()} 
     };
 
     private List<List<int>> rutasValidas = new List<List<int>>();
 
     public List<int> ObtenerRutaAleatoria()
     {
+        // ==========================================
+        // 🔥 LÓGICA DEL MODO LIBRE 🔥
+        // ==========================================
+    if (modoLibre)
+        {
+            // Le pasamos ÚNICAMENTE el nodo final para que ignore el punto de salida
+            Debug.Log("🗺️ Modo Libre activado: Mostrando únicamente la meta final.");
+            return new List<int> { nodoFin };
+        }
+
+        // ==========================================
+        // LÓGICA ORIGINAL (MODO GUIADO)
+        // ==========================================
         rutasValidas.Clear();
         List<int> rutaActual = new List<int> { nodoInicio };
         
@@ -84,11 +99,6 @@ public class GeneradorRutas : MonoBehaviour
         }
     }
 
-    // ==========================================
-    // 🔥 LÓGICA DE VICTORIA INTEGRADA 🔥
-    // ==========================================
-
-    // Esta función la llamará el último checkpoint cuando el coche lo pise
     public void CompletarNivel()
     {
         if (nivelCompletado) return;
@@ -96,10 +106,8 @@ public class GeneradorRutas : MonoBehaviour
         nivelCompletado = true;
         Debug.Log("🏆 ¡VICTORIA! Has llegado al nodo 19 y escapado de la policía.");
 
-        // Congelamos las físicas y el movimiento del juego
         Time.timeScale = 0f;
 
-        // Activamos la pantalla de celebración
         if (panelVictoria != null)
         {
             panelVictoria.SetActive(true);
@@ -110,10 +118,9 @@ public class GeneradorRutas : MonoBehaviour
         }
     }
 
-    // Función pública para asignar al botón "Siguiente Nivel / Reiniciar" en la UI
     public void ReiniciarOSiguienteNivel()
     {
-        Time.timeScale = 1f; // Devolvemos el tiempo a la normalidad
+        Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 }

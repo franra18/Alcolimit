@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
@@ -26,6 +27,10 @@ public class PoliciaIA : MonoBehaviour
     [Header("Condición de Derrota (Arresto)")]
     [Tooltip("Distancia (Y) en metros a la que el policía empieza a arrestarte")]
     public float distanciaCaptura = 6f; 
+
+    [Tooltip("Arrastra aquí el TextoAlarmaPolicia del Canvas")]
+    public TMP_Text textoAlarmaUI;
+
     [Tooltip("Tiempo (X) en segundos que debes permanecer cerca para perder")]
     public float tiempoParaCaptura = 3f; 
 
@@ -189,40 +194,44 @@ void FixedUpdate()
 
 void ComprobarArresto(float distanciaAlJugador)
     {
-        // Si ya hemos perdido, no seguimos calculando
         if (juegoTerminado) return;
 
-        // ¿Está la policía lo suficientemente cerca (Y metros)?
         if (distanciaAlJugador <= distanciaCaptura)
         {
-            // El tiempo (X) empieza a correr en contra del jugador
             cronometroCaptura += Time.fixedDeltaTime;
 
-            // Debug visual para la consola (opcional, te ayudará a ver cómo sube)
-            Debug.Log($"🚨 ¡Te están arrestando! Tiempo: {cronometroCaptura:F1}s / {tiempoParaCaptura}s");
+            // 🔥 MODO PELIGRO: Texto en rojo con la cuenta atrás
+            if (textoAlarmaUI != null)
+            {
+                textoAlarmaUI.color = Color.red; // Cambiamos el color a rojo alerta
+                // Calculamos cuánto tiempo queda restando el máximo menos el actual
+                float tiempoRestante = tiempoParaCaptura - cronometroCaptura;
+                textoAlarmaUI.text = $"¡PELIGRO! ARRESTO EN: {tiempoRestante:F1}s";
+            }
 
             if (cronometroCaptura >= tiempoParaCaptura)
             {
-                // ¡CONDICIÓN DE DERROTA CUMPLIDA!
                 juegoTerminado = true;
-                Debug.Log("🚔 ¡Busted! HAS SIDO ARRESTADO. Fin de la partida.");
-                
-                // Aquí puedes pausar el tiempo para que todo se congele
                 Time.timeScale = 0f; 
+                
                 if (panelGameOver != null)
-                    {
-                        panelGameOver.SetActive(true);
-                    }
-                // TODO: Más adelante aquí activaremos el Canvas de Game Over
+                {
+                    panelGameOver.SetActive(true);
+                }
+                
+                // Ocultamos el texto del radar al perder
+                if (textoAlarmaUI != null) textoAlarmaUI.gameObject.SetActive(false); 
             }
         }
         else
         {
-            // Si el jugador consigue alejarse más de Y metros, el contador se reinicia instantáneamente
-            if (cronometroCaptura > 0f)
+            if (cronometroCaptura > 0f) cronometroCaptura = 0f;
+
+            // 🔥 MODO SEGURO: Texto en blanco mostrando la distancia normal
+            if (textoAlarmaUI != null)
             {
-                cronometroCaptura = 0f;
-                Debug.Log("💨 ¡Te has zafado de la policía por los pelos!");
+                textoAlarmaUI.color = Color.white; // Color normal
+                textoAlarmaUI.text = $"Policía a: {distanciaAlJugador:F1} m";
             }
         }
     }
