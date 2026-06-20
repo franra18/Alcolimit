@@ -50,6 +50,10 @@ public class PoliciaIA : MonoBehaviour
 
     void Start()
     {
+        if (panelGameOver != null)
+    {
+        panelGameOver.SetActive(false);
+    }
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
 

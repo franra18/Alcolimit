@@ -44,6 +44,17 @@ public class GeneradorRutas : MonoBehaviour
 
     private List<List<int>> rutasValidas = new List<List<int>>();
 
+    void Start()
+{
+    // 🔥 Apagamos la pantalla de victoria por precaución
+    if (panelVictoria != null)
+    {
+        panelVictoria.SetActive(false);
+    }
+
+    // ... el resto de tu código ...
+}
+
     public List<int> ObtenerRutaAleatoria()
     {
         // ==========================================
