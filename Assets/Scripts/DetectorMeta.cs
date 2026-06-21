@@ -3,6 +3,7 @@ using UnityEngine;
 public class DetectorMeta : MonoBehaviour
 {
     private GeneradorRutas gestorRutas;
+    private bool victoriaRegistrada = false; // Bloqueo para que solo cuente una vez
 
     void Start()
     {
@@ -11,13 +12,24 @@ public class DetectorMeta : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // other.transform.root viaja hasta el objeto más alto de la jerarquía (tu Electric Truck)
+        // Si ya ha detectado una pieza, ignoramos las demás
+        if (victoriaRegistrada) return;
+
+        // other.transform.root viaja hasta el objeto más alto de la jerarquía
         GameObject objetoPrincipal = other.transform.root.gameObject;
 
         // Comprobamos si ese objeto principal tiene la etiqueta Player
         if (objetoPrincipal.CompareTag("Player"))
         {
+            victoriaRegistrada = true; // Activamos el bloqueo
+
             Debug.Log($"🏆 ¡Victoria! El cilindro detectó la pieza '{other.gameObject.name}' del camión.");
+
+            // Sumar 1 al contador de victorias y guardar
+            int victoriasActuales = PlayerPrefs.GetInt("Victorias", 0);
+            victoriasActuales++;
+            PlayerPrefs.SetInt("Victorias", victoriasActuales);
+            PlayerPrefs.Save();
 
             if (gestorRutas != null)
             {

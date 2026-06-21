@@ -35,6 +35,7 @@ public class MenuInicio : MonoBehaviour
 
     private void CargarAjustesGuardados()
     {
+        // Si no existe el guardado, aplica los valores por defecto (1f, 1f, 15f)
         float volMusica = PlayerPrefs.GetFloat("Musica", 1f);
         float volEfectos = PlayerPrefs.GetFloat("Efectos", 1f);
         float sensibilidad = PlayerPrefs.GetFloat("Sensibilidad", 15f);
@@ -47,20 +48,15 @@ public class MenuInicio : MonoBehaviour
         AplicarVolumenMixer("Efectos", volEfectos);
     }
 
-    // --- Métodos de Interfaz ---
-
     public void Jugar()
     {
         PlayerPrefs.SetFloat("NivelAlcohol", 0f);
 
-        // Generar umbrales aleatorios: 5-6, 6-7, 7-8, u 8-9
-        int umbralMin = Random.Range(5, 9); // Devuelve 5, 6, 7 u 8
-        int umbralMax = umbralMin + 1;      // Devuelve 6, 7, 8 o 9
+        int umbralMin = Random.Range(5, 9); 
+        int umbralMax = umbralMin + 1;      
 
-        // Guardar los valores generados
         PlayerPrefs.SetFloat("UmbralMin", (float)umbralMin);
         PlayerPrefs.SetFloat("UmbralMax", (float)umbralMax);
-
         PlayerPrefs.Save();
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -80,15 +76,11 @@ public class MenuInicio : MonoBehaviour
 
     public void Salir()
     {
-        Debug.Log("Saliendo del juego...");
         Application.Quit();
-
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
     }
-
-    // --- Funciones para los Eventos de tus Ajustes ---
 
     public void AjustarVolumenMusica(float volumen)
     {
@@ -114,15 +106,9 @@ public class MenuInicio : MonoBehaviour
     {
         switch (indiceModo)
         {
-            case 0:
-                Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
-                break;
-            case 1:
-                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
-                break;
-            case 2:
-                Screen.fullScreenMode = FullScreenMode.Windowed;
-                break;
+            case 0: Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen; break;
+            case 1: Screen.fullScreenMode = FullScreenMode.FullScreenWindow; break;
+            case 2: Screen.fullScreenMode = FullScreenMode.Windowed; break;
         }
     }
 

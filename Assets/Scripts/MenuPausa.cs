@@ -13,6 +13,8 @@ public class MenuPausa : MonoBehaviour
 
     [Header("Sliders / Ajustes")]
     [SerializeField] private Slider sliderSensibilidad;
+    [SerializeField] private Slider sliderMusica;  // <-- NUEVO
+    [SerializeField] private Slider sliderEfectos; // <-- NUEVO
     [SerializeField] private AudioMixer audioMixer;
 
     [Header("Referencias del Jugador (Interior)")]
@@ -20,7 +22,7 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private PlayerInteraction jugadorInteraccion;
 
     [Header("Referencias del Jugador (Exterior/Coche)")]
-    [SerializeField] private CockpitLook cockpitController; // <-- ¡NUEVO! Para que funcione en la escena 2
+    [SerializeField] private CockpitLook cockpitController;
 
     private bool estaPausado = false;
 
@@ -29,28 +31,27 @@ public class MenuPausa : MonoBehaviour
         OcultarTodoElMenu();
         if (canvasHUDJuego != null) canvasHUDJuego.SetActive(true);
 
-        // --- 1. CARGAR SENSIBILIDAD ---
-        if (PlayerPrefs.HasKey("Sensibilidad"))
-        {
-            float sensGuardada = PlayerPrefs.GetFloat("Sensibilidad");
-            
-            // Se lo aplicamos al que esté activo en la escena actual
-            if (jugadorController != null) jugadorController.mouseSensitivity = sensGuardada;
-            if (cockpitController != null) cockpitController.mouseSensitivity = sensGuardada;
-            
-            if (sliderSensibilidad != null) sliderSensibilidad.value = sensGuardada;
-        }
+        CargarAjustes();
+    }
 
-        // --- 2. CARGAR AUDIO ---
-        if (PlayerPrefs.HasKey("Musica") && audioMixer != null)
-        {
-            AjustarVolumenMusica(PlayerPrefs.GetFloat("Musica"));
-        }
+    private void CargarAjustes()
+    {
+        // Cargamos los valores guardados o sus valores por defecto si es la primera vez
+        float sensGuardada = PlayerPrefs.GetFloat("Sensibilidad", 15f);
+        float volMusica = PlayerPrefs.GetFloat("Musica", 1f);
+        float volEfectos = PlayerPrefs.GetFloat("Efectos", 1f);
 
-        if (PlayerPrefs.HasKey("Efectos") && audioMixer != null)
-        {
-            AjustarVolumenEfectos(PlayerPrefs.GetFloat("Efectos"));
-        }
+        // --- 1. APLICAR SENSIBILIDAD ---
+        if (jugadorController != null) jugadorController.mouseSensitivity = sensGuardada;
+        if (cockpitController != null) cockpitController.mouseSensitivity = sensGuardada;
+        if (sliderSensibilidad != null) sliderSensibilidad.value = sensGuardada;
+
+        // --- 2. APLICAR AUDIO ---
+        if (sliderMusica != null) sliderMusica.value = volMusica;
+        if (sliderEfectos != null) sliderEfectos.value = volEfectos;
+
+        AjustarVolumenMusica(volMusica);
+        AjustarVolumenEfectos(volEfectos);
     }
 
     private void Update()
@@ -77,7 +78,6 @@ public class MenuPausa : MonoBehaviour
 
         if (canvasHUDJuego != null) canvasHUDJuego.SetActive(false);
 
-        // Desactivamos los controles para que no te muevas estando en el menú
         if (jugadorController != null) jugadorController.enabled = false;
         if (cockpitController != null) cockpitController.enabled = false;
         if (jugadorInteraccion != null) jugadorInteraccion.enabled = false;
@@ -94,7 +94,6 @@ public class MenuPausa : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // Volvemos a activar los controles
         if (jugadorController != null) jugadorController.enabled = true;
         if (cockpitController != null) cockpitController.enabled = true;
         if (jugadorInteraccion != null) jugadorInteraccion.enabled = true;
@@ -124,8 +123,6 @@ public class MenuPausa : MonoBehaviour
         SceneManager.LoadScene(0); 
     }
 
-    // --- GUARDADO DE AJUSTES ---
-
     public void AjustarVolumenMusica(float volumen)
     {
         if (audioMixer != null)
@@ -133,7 +130,7 @@ public class MenuPausa : MonoBehaviour
             float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
             audioMixer.SetFloat("Musica", volumenCalculado);
         }
-        PlayerPrefs.SetFloat("Musica", volumen); // <-- GUARDAR
+        PlayerPrefs.SetFloat("Musica", volumen); 
         PlayerPrefs.Save();
     }
 
@@ -144,17 +141,16 @@ public class MenuPausa : MonoBehaviour
             float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
             audioMixer.SetFloat("Efectos", volumenCalculado);
         }
-        PlayerPrefs.SetFloat("Efectos", volumen); // <-- GUARDAR
+        PlayerPrefs.SetFloat("Efectos", volumen); 
         PlayerPrefs.Save();
     }
 
     public void AjustarSensibilidad(float sensibilidad)
     {
-        // Se lo aplicamos a ambos scripts (aunque solo uno existirá en la escena a la vez)
         if (jugadorController != null) jugadorController.mouseSensitivity = sensibilidad;
         if (cockpitController != null) cockpitController.mouseSensitivity = sensibilidad;
 
-        PlayerPrefs.SetFloat("Sensibilidad", sensibilidad); // <-- GUARDAR
+        PlayerPrefs.SetFloat("Sensibilidad", sensibilidad); 
         PlayerPrefs.Save();
     }
 
