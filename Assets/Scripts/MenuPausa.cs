@@ -15,24 +15,41 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private Slider sliderSensibilidad;
     [SerializeField] private AudioMixer audioMixer;
 
-    [Header("Referencias del Jugador")]
+    [Header("Referencias del Jugador (Interior)")]
     [SerializeField] private FirstPersonController jugadorController;
     [SerializeField] private PlayerInteraction jugadorInteraccion;
+
+    [Header("Referencias del Jugador (Exterior/Coche)")]
+    [SerializeField] private CockpitLook cockpitController; // <-- ¡NUEVO! Para que funcione en la escena 2
 
     private bool estaPausado = false;
 
     private void Start()
     {
-        // Al empezar la partida todo el menú debe estar completamente oculto
         OcultarTodoElMenu();
         if (canvasHUDJuego != null) canvasHUDJuego.SetActive(true);
 
-        // Inicializa la sensibilidad en el slider si existe el jugador
+        // --- 1. CARGAR SENSIBILIDAD ---
         if (PlayerPrefs.HasKey("Sensibilidad"))
         {
             float sensGuardada = PlayerPrefs.GetFloat("Sensibilidad");
+            
+            // Se lo aplicamos al que esté activo en la escena actual
             if (jugadorController != null) jugadorController.mouseSensitivity = sensGuardada;
+            if (cockpitController != null) cockpitController.mouseSensitivity = sensGuardada;
+            
             if (sliderSensibilidad != null) sliderSensibilidad.value = sensGuardada;
+        }
+
+        // --- 2. CARGAR AUDIO ---
+        if (PlayerPrefs.HasKey("Musica") && audioMixer != null)
+        {
+            AjustarVolumenMusica(PlayerPrefs.GetFloat("Musica"));
+        }
+
+        if (PlayerPrefs.HasKey("Efectos") && audioMixer != null)
+        {
+            AjustarVolumenEfectos(PlayerPrefs.GetFloat("Efectos"));
         }
     }
 
@@ -42,30 +59,17 @@ public class MenuPausa : MonoBehaviour
         {
             if (estaPausado)
             {
-                // Si está en el menú de ajustes y pulsa Escape, vuelve al menú de pausa principal
-                if (menuAjustesPanel.activeSelf)
-                {
-                    MostrarMenuPrincipalPausa();
-                }
-                else
-                {
-                    Reanudar();
-                }
+                if (menuAjustesPanel.activeSelf) MostrarMenuPrincipalPausa();
+                else Reanudar();
             }
-            else
-            {
-                Pausar();
-            }
+            else Pausar();
         }
     }
-
-    // --- Gestión de Navegación de Menús ---
 
     public void Pausar()
     {
         estaPausado = true;
         Time.timeScale = 0f;
-
         MostrarMenuPrincipalPausa();
 
         Cursor.lockState = CursorLockMode.None;
@@ -73,8 +77,9 @@ public class MenuPausa : MonoBehaviour
 
         if (canvasHUDJuego != null) canvasHUDJuego.SetActive(false);
 
+        // Desactivamos los controles para que no te muevas estando en el menú
         if (jugadorController != null) jugadorController.enabled = false;
-
+        if (cockpitController != null) cockpitController.enabled = false;
         if (jugadorInteraccion != null) jugadorInteraccion.enabled = false;
     }
 
@@ -82,15 +87,16 @@ public class MenuPausa : MonoBehaviour
     {
         estaPausado = false;
         Time.timeScale = 1f;
-
         OcultarTodoElMenu();
+
         if (canvasHUDJuego != null) canvasHUDJuego.SetActive(true);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        // Volvemos a activar los controles
         if (jugadorController != null) jugadorController.enabled = true;
-
+        if (cockpitController != null) cockpitController.enabled = true;
         if (jugadorInteraccion != null) jugadorInteraccion.enabled = true;
     }
 
@@ -112,22 +118,23 @@ public class MenuPausa : MonoBehaviour
         if (menuAjustesPanel != null) menuAjustesPanel.SetActive(false);
     }
 
-    // --- Funciones de Botones y Configuración ---
-
     public void SalirAlMenuPrincipal()
     {
-        Time.timeScale = 1f; // Asegúrate de restablecer el tiempo antes de cambiar de escena
-        SceneManager.LoadScene(0); // Cambia el 0 por el índice o nombre de tu menú de inicio
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(0); 
     }
+
+    // --- GUARDADO DE AJUSTES ---
 
     public void AjustarVolumenMusica(float volumen)
     {
         if (audioMixer != null)
         {
-            // Evita log10(0) que daría error usando un número mínimo muy bajo
             float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
             audioMixer.SetFloat("Musica", volumenCalculado);
         }
+        PlayerPrefs.SetFloat("Musica", volumen); // <-- GUARDAR
+        PlayerPrefs.Save();
     }
 
     public void AjustarVolumenEfectos(float volumen)
@@ -137,29 +144,27 @@ public class MenuPausa : MonoBehaviour
             float volumenCalculado = volumen > 0 ? Mathf.Log10(volumen) * 20 : -80f;
             audioMixer.SetFloat("Efectos", volumenCalculado);
         }
+        PlayerPrefs.SetFloat("Efectos", volumen); // <-- GUARDAR
+        PlayerPrefs.Save();
     }
 
     public void AjustarSensibilidad(float sensibilidad)
     {
-        if (jugadorController != null)
-        {
-            jugadorController.mouseSensitivity = sensibilidad;
-        }
+        // Se lo aplicamos a ambos scripts (aunque solo uno existirá en la escena a la vez)
+        if (jugadorController != null) jugadorController.mouseSensitivity = sensibilidad;
+        if (cockpitController != null) cockpitController.mouseSensitivity = sensibilidad;
+
+        PlayerPrefs.SetFloat("Sensibilidad", sensibilidad); // <-- GUARDAR
+        PlayerPrefs.Save();
     }
 
     public void CambiarModoPantalla(int indiceModo)
     {
         switch (indiceModo)
         {
-            case 0:
-                Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
-                break;
-            case 1:
-                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
-                break;
-            case 2:
-                Screen.fullScreenMode = FullScreenMode.Windowed;
-                break;
+            case 0: Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen; break;
+            case 1: Screen.fullScreenMode = FullScreenMode.FullScreenWindow; break;
+            case 2: Screen.fullScreenMode = FullScreenMode.Windowed; break;
         }
     }
 }

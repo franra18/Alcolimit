@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; 
-using UnityEngine.Audio; // Obligatorio para controlar el AudioMixer
-using UnityEngine.UI;    // Obligatorio para usar componentes Slider y UI
+using UnityEngine.Audio; 
+using UnityEngine.UI;    
 
 public class MenuInicio : MonoBehaviour
 {
@@ -15,10 +15,8 @@ public class MenuInicio : MonoBehaviour
     [SerializeField] private Slider sliderEfectos;
     [SerializeField] private Slider sliderSensibilidad;
 
-    // Start se ejecuta una sola vez al iniciar la escena
     private void Start()
     {
-        // Nos aseguramos de que solo el menú principal empiece visible
         if (menuPrincipal != null) menuPrincipal.SetActive(true);
         if (menuAjustes != null) menuAjustes.SetActive(false);
 
@@ -27,9 +25,9 @@ public class MenuInicio : MonoBehaviour
 
     private void CargarAjustesGuardados()
     {
-        // Carga los valores guardados previamente, o usa valores por defecto
-        float volMusica = PlayerPrefs.GetFloat("VolMusica", 1f);
-        float volEfectos = PlayerPrefs.GetFloat("VolEfectos", 1f);
+        // Utilizamos EXACTAMENTE las mismas claves que en MenuPausa
+        float volMusica = PlayerPrefs.GetFloat("Musica", 1f);
+        float volEfectos = PlayerPrefs.GetFloat("Efectos", 1f);
         float sensibilidad = PlayerPrefs.GetFloat("Sensibilidad", 15f);
 
         // Inicializa visualmente los sliders
@@ -76,18 +74,21 @@ public class MenuInicio : MonoBehaviour
     public void AjustarVolumenMusica(float volumen)
     {
         AplicarVolumenMixer("Musica", volumen);
-        PlayerPrefs.SetFloat("VolMusica", volumen); 
+        PlayerPrefs.SetFloat("Musica", volumen); // Clave unificada
+        PlayerPrefs.Save(); // Forzar guardado
     }
 
     public void AjustarVolumenEfectos(float volumen)
     {
         AplicarVolumenMixer("Efectos", volumen);
-        PlayerPrefs.SetFloat("VolEfectos", volumen); 
+        PlayerPrefs.SetFloat("Efectos", volumen); // Clave unificada
+        PlayerPrefs.Save(); // Forzar guardado
     }
 
     public void AjustarSensibilidad(float sensibilidad)
     {
         PlayerPrefs.SetFloat("Sensibilidad", sensibilidad); 
+        PlayerPrefs.Save(); // Forzar guardado
     }
 
     public void CambiarModoPantalla(int indiceModo)
@@ -106,7 +107,6 @@ public class MenuInicio : MonoBehaviour
         }
     }
 
-    // Método auxiliar para calcular la escala logarítmica del AudioMixer
     private void AplicarVolumenMixer(string parametro, float volumen)
     {
         if (audioMixer != null)
