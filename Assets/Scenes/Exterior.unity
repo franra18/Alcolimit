@@ -13453,16 +13453,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8806667431029080315, guid: d56123a0271c76241bb2c7c6253e8c15, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806667431033635799, guid: d56123a0271c76241bb2c7c6253e8c15, type: 3}
+      propertyPath: m_Brightness
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8806667431034490017, guid: d56123a0271c76241bb2c7c6253e8c15, type: 3}
       propertyPath: _sunEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8806667431034490017, guid: d56123a0271c76241bb2c7c6253e8c15, type: 3}
       propertyPath: _sunTexture
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2800000, guid: eb1e18ae3dbe9f348a7bc0d71a5cc811, type: 3}
     - target: {fileID: 8806667431034490017, guid: d56123a0271c76241bb2c7c6253e8c15, type: 3}
       propertyPath: _cloudsTint.b
       value: 0.8867924
@@ -23113,6 +23117,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8917895740616771620, guid: 9c8b1a896405b584e99933fce51d5688, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142275550821158628, guid: 9c8b1a896405b584e99933fce51d5688, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9142275550821158628, guid: 9c8b1a896405b584e99933fce51d5688, type: 3}
@@ -82835,6 +82843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269465850}
   - component: {fileID: 1269465851}
+  - component: {fileID: 1269465852}
   m_Layer: 0
   m_Name: CameraPivot
   m_TagString: Untagged
@@ -82867,12 +82876,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 1269465849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb014300e74c824469cf3cbf67b8cedc, type: 3}
+  m_Script: {fileID: 11500000, guid: bbc3b40f79661d2469b70336fbc0d481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  sensibilidadMouse: 100
-  limiteVertical: 60
-  limiteHorizontal: 80
+  cameraTransform: {fileID: 1977051924}
+  mouseSensitivity: 25
+  lookAction:
+    m_Name: Look
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c4eaa67a-e92e-42ed-94c3-b6b499a45093
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c7dec922-4d49-4763-9817-1e2b9f2ac7f1
+      m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 0
+    m_Flags: 0
+--- !u!114 &1269465852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269465849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0b9cd61ebf4f44ba2455626d85ed24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SistemaAlcohol
+  nivelDeAlcohol: 10
+  barraAlcohol: {fileID: 0}
+  mainCamera: {fileID: 1977051924}
+  volumenGlobal: {fileID: 740207557}
+  velocidadMareo: 1.2
+  anguloMaximoMareo: 12
 --- !u!1001 &1269693736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97483,6 +97526,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 7f94dcfc3db938f46bfe411de90b40a9, type: 2}
   jugadorController: {fileID: 0}
   jugadorInteraccion: {fileID: 0}
+  cockpitController: {fileID: 1269465851}
 --- !u!114 &1465750126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135016,7 +135060,6 @@ GameObject:
   - component: {fileID: 1977051927}
   - component: {fileID: 1977051926}
   - component: {fileID: 1977051925}
-  - component: {fileID: 1977051928}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -135142,24 +135185,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1977051928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977051923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0b9cd61ebf4f44ba2455626d85ed24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SistemaAlcohol
-  nivelDeAlcohol: 10
-  barraAlcohol: {fileID: 0}
-  mainCamera: {fileID: 1977051924}
-  volumenGlobal: {fileID: 740207557}
-  velocidadMareo: 1.2
-  anguloMaximoMareo: 12
 --- !u!1001 &1977151686
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -44,6 +44,9 @@ public class MenuInicio : MonoBehaviour
 
     public void Jugar()
     {
+        PlayerPrefs.SetFloat("NivelAlcohol", 0f);
+        PlayerPrefs.Save();
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
