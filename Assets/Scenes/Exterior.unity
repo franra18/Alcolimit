@@ -48355,7 +48355,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: c5e0c46519d85ef44b45b76351c04eca, type: 2}
+  sharedProfile: {fileID: 11400000, guid: dda3cad79a1a5fb46b918ced5647605e, type: 2}
 --- !u!4 &740207558
 Transform:
   m_ObjectHideFlags: 0
@@ -82907,11 +82907,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1269465849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0b9cd61ebf4f44ba2455626d85ed24, type: 3}
+  m_Script: {fileID: 11500000, guid: 63db1ab72100ec043af135f76a80d27c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SistemaAlcohol
-  nivelDeAlcohol: 10
-  barraAlcohol: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::EfectosAlcoholCoche
   mainCamera: {fileID: 1977051924}
   volumenGlobal: {fileID: 740207557}
   velocidadMareo: 1.2
@@ -135105,7 +135103,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

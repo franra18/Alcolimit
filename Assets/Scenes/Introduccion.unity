@@ -579,7 +579,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -715,6 +715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControladorIntroduccion
   componenteImagenUI: {fileID: 560092030}
   canvasGroup: {fileID: 560092032}
+  vinetasUmbrales: []
   vinetas:
   - {fileID: 21300000, guid: c7757d3e82c5e3b4cb1cb817dc8e8846, type: 3}
   - {fileID: 21300000, guid: 30331674606784d43bb89b1c240abb94, type: 3}

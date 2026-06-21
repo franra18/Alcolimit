@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.Audio; 
-using UnityEngine.UI;    
+using UnityEngine.UI; 
+using TMPro;
 
 public class MenuInicio : MonoBehaviour
 {
     [Header("Paneles del Menú")]
     [SerializeField] private GameObject menuPrincipal;
     [SerializeField] private GameObject menuAjustes;
+
+    [Header("UI Estadísticas")]
+    [SerializeField] private TMP_Text textoVictorias; 
 
     [Header("Referencias de Ajustes")]
     [SerializeField] private AudioMixer audioMixer;
@@ -20,22 +24,25 @@ public class MenuInicio : MonoBehaviour
         if (menuPrincipal != null) menuPrincipal.SetActive(true);
         if (menuAjustes != null) menuAjustes.SetActive(false);
 
+        if (textoVictorias != null)
+        {
+            int victorias = PlayerPrefs.GetInt("Victorias", 0);
+            textoVictorias.text = $"Número de Victorias: {victorias}";
+        }
+
         CargarAjustesGuardados();
     }
 
     private void CargarAjustesGuardados()
     {
-        // Utilizamos EXACTAMENTE las mismas claves que en MenuPausa
         float volMusica = PlayerPrefs.GetFloat("Musica", 1f);
         float volEfectos = PlayerPrefs.GetFloat("Efectos", 1f);
         float sensibilidad = PlayerPrefs.GetFloat("Sensibilidad", 15f);
 
-        // Inicializa visualmente los sliders
         if (sliderMusica != null) sliderMusica.value = volMusica;
         if (sliderEfectos != null) sliderEfectos.value = volEfectos;
         if (sliderSensibilidad != null) sliderSensibilidad.value = sensibilidad;
 
-        // Aplica directamente el volumen al AudioMixer
         AplicarVolumenMixer("Musica", volMusica);
         AplicarVolumenMixer("Efectos", volEfectos);
     }
@@ -45,6 +52,15 @@ public class MenuInicio : MonoBehaviour
     public void Jugar()
     {
         PlayerPrefs.SetFloat("NivelAlcohol", 0f);
+
+        // Generar umbrales aleatorios: 5-6, 6-7, 7-8, u 8-9
+        int umbralMin = Random.Range(5, 9); // Devuelve 5, 6, 7 u 8
+        int umbralMax = umbralMin + 1;      // Devuelve 6, 7, 8 o 9
+
+        // Guardar los valores generados
+        PlayerPrefs.SetFloat("UmbralMin", (float)umbralMin);
+        PlayerPrefs.SetFloat("UmbralMax", (float)umbralMax);
+
         PlayerPrefs.Save();
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -77,21 +93,21 @@ public class MenuInicio : MonoBehaviour
     public void AjustarVolumenMusica(float volumen)
     {
         AplicarVolumenMixer("Musica", volumen);
-        PlayerPrefs.SetFloat("Musica", volumen); // Clave unificada
-        PlayerPrefs.Save(); // Forzar guardado
+        PlayerPrefs.SetFloat("Musica", volumen); 
+        PlayerPrefs.Save(); 
     }
 
     public void AjustarVolumenEfectos(float volumen)
     {
         AplicarVolumenMixer("Efectos", volumen);
-        PlayerPrefs.SetFloat("Efectos", volumen); // Clave unificada
-        PlayerPrefs.Save(); // Forzar guardado
+        PlayerPrefs.SetFloat("Efectos", volumen); 
+        PlayerPrefs.Save(); 
     }
 
     public void AjustarSensibilidad(float sensibilidad)
     {
         PlayerPrefs.SetFloat("Sensibilidad", sensibilidad); 
-        PlayerPrefs.Save(); // Forzar guardado
+        PlayerPrefs.Save(); 
     }
 
     public void CambiarModoPantalla(int indiceModo)

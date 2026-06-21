@@ -11,6 +11,9 @@ public class ControladorIntroduccion : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
 
     [Header("Contenido de la Historia")]
+    [Tooltip("Asigna las 4 viñetas iniciales en orden: 0 para 5-6, 1 para 6-7, 2 para 7-8, 3 para 8-9")]
+    [SerializeField] private Sprite[] vinetasUmbrales; 
+    [Tooltip("Pon en el elemento 0 cualquier viñeta (se sustituirá sola) y en el elemento 1 la segunda viñeta")]
     [SerializeField] private Sprite[] vinetas;
 
     [Header("Ajustes de Transición")]
@@ -23,15 +26,22 @@ public class ControladorIntroduccion : MonoBehaviour
     {
         if (vinetas.Length > 0 && componenteImagenUI != null && canvasGroup != null)
         {
+            float umbralMin = PlayerPrefs.GetFloat("UmbralMin", 5f);
+            
+            // Convertimos los posibles valores (5, 6, 7, 8) en los índices del array (0, 1, 2, 3)
+            int indiceUmbral = (int)umbralMin - 5;
+            indiceUmbral = Mathf.Clamp(indiceUmbral, 0, 3);
+
+            if (vinetasUmbrales != null && vinetasUmbrales.Length == 4)
+            {
+                // Sobrescribimos la primera viñeta con la imagen correcta según el umbral
+                vinetas[0] = vinetasUmbrales[indiceUmbral];
+            }
+
             componenteImagenUI.sprite = vinetas[indiceActual];
             
-            // CAMBIO: Empezamos en invisible y lanzamos el fundido inicial
             canvasGroup.alpha = 0f; 
             StartCoroutine(FundidoInicial());
-        }
-        else
-        {
-            Debug.LogError("Por favor, asigna la Imagen UI, el Canvas Group y al menos una viñeta en el Inspector.");
         }
     }
 
@@ -46,7 +56,6 @@ public class ControladorIntroduccion : MonoBehaviour
         }
     }
 
-    // Corrutina para que la primera viñeta aparezca suavemente al cargar la escena
     private IEnumerator FundidoInicial()
     {
         estaTransicionando = true;
@@ -58,7 +67,6 @@ public class ControladorIntroduccion : MonoBehaviour
     {
         estaTransicionando = true;
 
-        // 1. Desvanecer hacia el fondo negro (Fade Out)
         yield return StartCoroutine(ModificarOpacidad(1f, 0f));
 
         indiceActual++;
@@ -66,10 +74,7 @@ public class ControladorIntroduccion : MonoBehaviour
         if (indiceActual < vinetas.Length)
         {
             componenteImagenUI.sprite = vinetas[indiceActual];
-
-            // 2. Aparecer desde el fondo negro (Fade In)
             yield return StartCoroutine(ModificarOpacidad(0f, 1f));
-            
             estaTransicionando = false;
         }
         else
@@ -100,10 +105,6 @@ public class ControladorIntroduccion : MonoBehaviour
         if (siguienteEscena < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(siguienteEscena);
-        }
-        else
-        {
-            Debug.LogError("No hay ninguna escena añadida después de esta en el Build Settings.");
         }
     }
 }

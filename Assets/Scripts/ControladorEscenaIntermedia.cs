@@ -21,39 +21,33 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     [SerializeField] private Sprite vinetaSobrio;
     [SerializeField] private Sprite vinetaEbrio;
 
-    [Header("Rango para Estado Sobrio")]
-    [Tooltip("El nivel de alcohol mínimo para considerar al jugador sobrio")]
-    [SerializeField] private float alcoholMinSobrio = 0f;
-    [Tooltip("El nivel de alcohol máximo para considerar al jugador sobrio")]
-    [SerializeField] private float alcoholMaxSobrio = 4f; 
-
     [Header("Ajustes de Transición")]
     [SerializeField] private float duracionFundido = 0.5f;
 
     private Sprite[] vinetasElegidas = new Sprite[2];
     private int indiceActual = 0;
     private bool estaTransicionando = false;
-    private bool esEbrio = false; // Nos guardará el resultado de la condición
+    private bool esEbrio = false; 
 
     void Start()
     {
-        // 1. Asegurar que el tiempo corre normalmente al iniciar la escena
         Time.timeScale = 1f;
 
-        // 2. Asegurar que el menú de derrota empiece oculto por código por si acaso
         if (menuDerrota != null)
         {
             menuDerrota.SetActive(false);
         }
 
-        // 3. Recuperar el nivel de alcohol guardado
-        float nivelAlcohol = PlayerPrefs.GetFloat("NivelAlcohol", 0f);
+        float nivelAlcoholOriginal = PlayerPrefs.GetFloat("NivelAlcohol", 0f);
+        // Convertimos el nivel (ej: 75 pasa a ser 7.5) para compararlo con los umbrales
+        float nivelAlcoholConvertido = nivelAlcoholOriginal / 10f; 
 
-        // 4. Configurar la primera viñeta
+        float umbralMin = PlayerPrefs.GetFloat("UmbralMin", 5f);
+        float umbralMax = PlayerPrefs.GetFloat("UmbralMax", 6f);
+
         vinetasElegidas[0] = vinetaInicialFija;
 
-        // 5. Evaluar el rango
-        if (nivelAlcohol >= alcoholMinSobrio && nivelAlcohol <= alcoholMaxSobrio)
+        if (nivelAlcoholConvertido >= umbralMin && nivelAlcoholConvertido <= umbralMax)
         {
             vinetasElegidas[1] = vinetaSobrio;
             esEbrio = false;
@@ -61,10 +55,9 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         else
         {
             vinetasElegidas[1] = vinetaEbrio;
-            esEbrio = true; // El jugador ha perdido
+            esEbrio = true; 
         }
 
-        // 6. Inicializar la UI
         if (vinetasElegidas[0] != null && componenteImagenUI != null && canvasGroup != null)
         {
             componenteImagenUI.sprite = vinetasElegidas[indiceActual];
@@ -81,7 +74,6 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     {
         if (estaTransicionando) return;
 
-        // Si el menú de derrota ya está activo, bloqueamos el cambio de viñetas con el teclado/ratón
         if (menuDerrota != null && menuDerrota.activeSelf) return;
 
         if ((Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame) ||
@@ -102,7 +94,6 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     {
         estaTransicionando = true;
 
-        // Fade Out
         yield return StartCoroutine(ModificarOpacidad(1f, 0f));
 
         indiceActual++;
@@ -111,13 +102,11 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         {
             componenteImagenUI.sprite = vinetasElegidas[indiceActual];
 
-            // Fade In
             yield return StartCoroutine(ModificarOpacidad(0f, 1f));
             estaTransicionando = false;
         }
         else
         {
-            // Hemos terminado de mostrar las viñetas. Decidimos el destino:
             if (esEbrio)
             {
                 ActivarMenuDerrota();
@@ -133,8 +122,8 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     {
         if (menuDerrota != null)
         {
-            menuDerrota.SetActive(true); // Activa el panel del menú en el Canvas
-            Time.timeScale = 0f;         // Pausa el tiempo del juego por completo
+            menuDerrota.SetActive(true); 
+            Time.timeScale = 0f;         
             Debug.Log("[ControladorEscenaIntermedia] Jugador detenido. Menú de derrota activado y juego pausado.");
         }
         else
@@ -148,8 +137,6 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         float tiempoTranscurrido = 0f;
         while (tiempoTranscurrido < duracionFundido)
         {
-            // NOTA: Usamos Time.unscaledDeltaTime para que la transición funcione 
-            // incluso si el tiempo se congelara por alguna razón externa.
             tiempoTranscurrido += Time.unscaledDeltaTime;
             canvasGroup.alpha = Mathf.Lerp(opacidadInicial, opacidadFinal, tiempoTranscurrido / duracionFundido);
             yield return null;
@@ -174,7 +161,7 @@ public class ControladorEscenaIntermedia : MonoBehaviour
 
     public void SalirAlMenuPrincipal()
     {
-        Time.timeScale = 1f; // Asegúrate de restablecer el tiempo antes de cambiar de escena
-        SceneManager.LoadScene(0); // Cambia el 0 por el índice o nombre de tu menú de inicio
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene(0); 
     }
 }

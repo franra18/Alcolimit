@@ -165,7 +165,10 @@ public class NPCMovimiento : MonoBehaviour
 
         foreach (ZonaNPC zona in todasLasZonas)
         {
-            if (zona.HayEspacio() && zona != zonaActual)
+            // NUEVO: Comprueba que la zona esté a la misma altura (margen de 1 metro)
+            bool esMismaPlanta = Mathf.Abs(zona.transform.position.y - transform.position.y) < 1f;
+
+            if (zona.HayEspacio() && zona != zonaActual && esMismaPlanta)
             {
                 zonasDisponibles.Add(zona);
             }
@@ -183,15 +186,8 @@ public class NPCMovimiento : MonoBehaviour
             
             agente.SetDestination(destinoDestino);
             
-            // Asignación de tiempo modificado para distinguir pista de baile
-            if (zonaActual.esPistaDeBaile)
-            {
-                tiempoEsperaActual = tiempoBaile;
-            }
-            else
-            {
-                tiempoEsperaActual = Random.Range(tiempoZonaMin, tiempoZonaMax);
-            }
+            if (zonaActual.esPistaDeBaile) tiempoEsperaActual = tiempoBaile;
+            else tiempoEsperaActual = Random.Range(tiempoZonaMin, tiempoZonaMax);
         }
         else
         {
@@ -205,11 +201,28 @@ public class NPCMovimiento : MonoBehaviour
 
         if (navMeshData.vertices.Length == 0) return;
 
-        int indiceAleatorio = Random.Range(0, navMeshData.vertices.Length);
-        Vector3 puntoAleatorio = navMeshData.vertices[indiceAleatorio];
+        Vector3 puntoAleatorio = transform.position;
+        bool puntoValido = false;
 
-        agente.SetDestination(puntoAleatorio);
-        tiempoEsperaActual = Random.Range(tiempoLibreMin, tiempoLibreMax);
+        // NUEVO: Intenta hasta 30 veces buscar un vértice que pertenezca a su misma planta
+        for (int i = 0; i < 30; i++)
+        {
+            int indiceAleatorio = Random.Range(0, navMeshData.vertices.Length);
+            Vector3 posiblePunto = navMeshData.vertices[indiceAleatorio];
+
+            if (Mathf.Abs(posiblePunto.y - transform.position.y) < 1f)
+            {
+                puntoAleatorio = posiblePunto;
+                puntoValido = true;
+                break;
+            }
+        }
+
+        if (puntoValido)
+        {
+            agente.SetDestination(puntoAleatorio);
+            tiempoEsperaActual = Random.Range(tiempoLibreMin, tiempoLibreMax);
+        }
     }
 
     private void LiberarZonaActual()
