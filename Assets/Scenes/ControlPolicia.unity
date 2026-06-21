@@ -595,11 +595,10 @@ MonoBehaviour:
   componenteImagenUI: {fileID: 1431896934}
   canvasGroup: {fileID: 1431896936}
   menuDerrota: {fileID: 1308536172}
-  vinetaInicialFija: {fileID: 21300000, guid: f231787d184cb7740ae941b4dbd1bd29, type: 3}
+  vinetaInicialFija: {fileID: 21300000, guid: 9d94bff04fd8e804d8a340817752987d, type: 3}
+  vinetaIntermediaFija: {fileID: 21300000, guid: 7f79207bcfb301d42b2bf469a4c11073, type: 3}
   vinetaSobrio: {fileID: 21300000, guid: 256504dd3c7dbcd4bbe8264294b15409, type: 3}
   vinetaEbrio: {fileID: 21300000, guid: a3532f5fcf5c4134ea4c0a5fd38a372e, type: 3}
-  alcoholMinSobrio: 0
-  alcoholMaxSobrio: 4
   duracionFundido: 0.5
 --- !u!1 &1304388474
 GameObject:

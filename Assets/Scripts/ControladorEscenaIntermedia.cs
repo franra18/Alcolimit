@@ -14,8 +14,9 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     [Tooltip("Arrastra aquí el GameObject del menú de derrota (debe empezar desactivado)")]
     [SerializeField] private GameObject menuDerrota;
 
-    [Header("Contenido Fijo (Primera Viñeta)")]
+    [Header("Contenido Fijo")]
     [SerializeField] private Sprite vinetaInicialFija;
+    [SerializeField] private Sprite vinetaIntermediaFija; // <-- NUEVA: Segunda viñeta fija
 
     [Header("Opciones Siguiente Viñeta")]
     [SerializeField] private Sprite vinetaSobrio;
@@ -24,7 +25,7 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     [Header("Ajustes de Transición")]
     [SerializeField] private float duracionFundido = 0.5f;
 
-    private Sprite[] vinetasElegidas = new Sprite[2];
+    private Sprite[] vinetasElegidas = new Sprite[3]; // <-- Cambiado a tamaño 3
     private int indiceActual = 0;
     private bool estaTransicionando = false;
     private bool esEbrio = false; 
@@ -39,22 +40,24 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         }
 
         float nivelAlcoholOriginal = PlayerPrefs.GetFloat("NivelAlcohol", 0f);
-        // Convertimos el nivel (ej: 75 pasa a ser 7.5) para compararlo con los umbrales
         float nivelAlcoholConvertido = nivelAlcoholOriginal / 10f; 
 
         float umbralMin = PlayerPrefs.GetFloat("UmbralMin", 5f);
         float umbralMax = PlayerPrefs.GetFloat("UmbralMax", 6f);
 
+        // Asignamos las dos viñetas fijas consecutivas
         vinetasElegidas[0] = vinetaInicialFija;
+        vinetasElegidas[1] = vinetaIntermediaFija; // <-- NUEVA
 
+        // La tercera viñeta (índice 2) es la variable
         if (nivelAlcoholConvertido >= umbralMin && nivelAlcoholConvertido <= umbralMax)
         {
-            vinetasElegidas[1] = vinetaSobrio;
+            vinetasElegidas[2] = vinetaSobrio;
             esEbrio = false;
         }
         else
         {
-            vinetasElegidas[1] = vinetaEbrio;
+            vinetasElegidas[2] = vinetaEbrio;
             esEbrio = true; 
         }
 
@@ -73,7 +76,6 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     void Update()
     {
         if (estaTransicionando) return;
-
         if (menuDerrota != null && menuDerrota.activeSelf) return;
 
         if ((Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame) ||
@@ -124,6 +126,12 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         {
             menuDerrota.SetActive(true); 
             Time.timeScale = 0f;         
+
+            // --- SOLUCIÓN AL RATÓN ---
+            Cursor.visible = true;                       // Hace que el cursor sea visible
+            Cursor.lockState = CursorLockMode.None;       // Desbloquea el ratón para que se mueva libremente
+            // -------------------------
+
             Debug.Log("[ControladorEscenaIntermedia] Jugador detenido. Menú de derrota activado y juego pausado.");
         }
         else

@@ -11,7 +11,7 @@ public class ControladorIntroduccion : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
 
     [Header("Contenido de la Historia")]
-    [Tooltip("Asigna las 4 viñetas iniciales en orden: 0 para 5-6, 1 para 6-7, 2 para 7-8, 3 para 8-9")]
+    [Tooltip("Asigna las 5 viñetas iniciales en orden: 0 para 5-6, 1 para 6-7, 2 para 7-8, 3 para 8-9, 4 para 9-10")]
     [SerializeField] private Sprite[] vinetasUmbrales; 
     [Tooltip("Pon en el elemento 0 cualquier viñeta (se sustituirá sola) y en el elemento 1 la segunda viñeta")]
     [SerializeField] private Sprite[] vinetas;
@@ -28,11 +28,11 @@ public class ControladorIntroduccion : MonoBehaviour
         {
             float umbralMin = PlayerPrefs.GetFloat("UmbralMin", 5f);
             
-            // Convertimos los posibles valores (5, 6, 7, 8) en los índices del array (0, 1, 2, 3)
+            // Convertimos los posibles valores (5, 6, 7, 8, 9) en los índices del array (0, 1, 2, 3, 4)
             int indiceUmbral = (int)umbralMin - 5;
-            indiceUmbral = Mathf.Clamp(indiceUmbral, 0, 3);
+            indiceUmbral = Mathf.Clamp(indiceUmbral, 0, 4);
 
-            if (vinetasUmbrales != null && vinetasUmbrales.Length == 4)
+            if (vinetasUmbrales != null && vinetasUmbrales.Length == 5)
             {
                 // Sobrescribimos la primera viñeta con la imagen correcta según el umbral
                 vinetas[0] = vinetasUmbrales[indiceUmbral];

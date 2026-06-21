@@ -52,7 +52,7 @@ public class MenuInicio : MonoBehaviour
     {
         PlayerPrefs.SetFloat("NivelAlcohol", 0f);
 
-        int umbralMin = Random.Range(5, 9); 
+        int umbralMin = Random.Range(5, 10); 
         int umbralMax = umbralMin + 1;      
 
         PlayerPrefs.SetFloat("UmbralMin", (float)umbralMin);
