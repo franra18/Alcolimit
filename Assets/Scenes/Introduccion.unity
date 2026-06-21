@@ -715,7 +715,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControladorIntroduccion
   componenteImagenUI: {fileID: 560092030}
   canvasGroup: {fileID: 560092032}
-  vinetasUmbrales: []
+  vinetasUmbrales:
+  - {fileID: 21300000, guid: 000bd303b988a93449cf7d5273c29ec7, type: 3}
+  - {fileID: 21300000, guid: f5e980cf6acea9748a0ad0ea40e8d382, type: 3}
+  - {fileID: 21300000, guid: 0ca71b55bfc4b384b8773102a1d1bfc6, type: 3}
+  - {fileID: 21300000, guid: c2b10667edc0dec47b6c970547986bdf, type: 3}
+  - {fileID: 21300000, guid: 668520c81ffc3b84ba90ad7510ac4b56, type: 3}
   vinetas:
   - {fileID: 21300000, guid: c7757d3e82c5e3b4cb1cb817dc8e8846, type: 3}
   - {fileID: 21300000, guid: 30331674606784d43bb89b1c240abb94, type: 3}
