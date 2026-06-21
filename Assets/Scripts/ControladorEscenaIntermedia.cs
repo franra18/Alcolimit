@@ -3,12 +3,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class ControladorEscenaIntermedia : MonoBehaviour
 {
     [Header("Configuración de UI")]
     [SerializeField] private Image componenteImagenUI;
     [SerializeField] private CanvasGroup canvasGroup;
+
+    [Tooltip("Arrastra aquí el componente TextMeshPro - Text de 'NivelAlcohol'")]
+    [SerializeField] private TextMeshProUGUI textoNivelAlcohol;
 
     [Header("Menú de Fin de Juego")]
     [Tooltip("Arrastra aquí el GameObject del menú de derrota (debe empezar desactivado)")]
@@ -29,6 +33,7 @@ public class ControladorEscenaIntermedia : MonoBehaviour
     private int indiceActual = 0;
     private bool estaTransicionando = false;
     private bool esEbrio = false; 
+    private float nivelAlcoholConvertido;
 
     void Start()
     {
@@ -39,8 +44,13 @@ public class ControladorEscenaIntermedia : MonoBehaviour
             menuDerrota.SetActive(false);
         }
 
+        if (textoNivelAlcohol != null)
+        {
+            textoNivelAlcohol.gameObject.SetActive(false);
+        }
+
         float nivelAlcoholOriginal = PlayerPrefs.GetFloat("NivelAlcohol", 0f);
-        float nivelAlcoholConvertido = nivelAlcoholOriginal / 10f; 
+        nivelAlcoholConvertido = nivelAlcoholOriginal / 10f; 
 
         float umbralMin = PlayerPrefs.GetFloat("UmbralMin", 5f);
         float umbralMax = PlayerPrefs.GetFloat("UmbralMax", 6f);
@@ -103,6 +113,13 @@ public class ControladorEscenaIntermedia : MonoBehaviour
         if (indiceActual < vinetasElegidas.Length)
         {
             componenteImagenUI.sprite = vinetasElegidas[indiceActual];
+
+            if (textoNivelAlcohol != null)
+            {
+                // Quiero que el texto solo sea el numero del nivel de alcohol
+                textoNivelAlcohol.text = nivelAlcoholConvertido.ToString("0.0");
+                textoNivelAlcohol.gameObject.SetActive(indiceActual == 1);
+            }
 
             yield return StartCoroutine(ModificarOpacidad(0f, 1f));
             estaTransicionando = false;
