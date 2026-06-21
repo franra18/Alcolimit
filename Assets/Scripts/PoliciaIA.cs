@@ -232,7 +232,9 @@ void ComprobarArresto(float distanciaAlJugador)
                 {
                     panelGameOver.SetActive(true);
                 }
-                
+                // Liberar el cursor para poder hacer clic
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 // Ocultamos el texto del radar al perder
                 if (textoAlarmaUI != null) textoAlarmaUI.gameObject.SetActive(false); 
             }

@@ -22,7 +22,9 @@ public class DetectorMeta : MonoBehaviour
             if (gestorRutas != null)
             {
                 gestorRutas.CompletarNivel();
-                
+                // Liberar el cursor para poder hacer clic
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 // Apagamos la meta para que no vuelva a chocar con las ruedas traseras
                 gameObject.SetActive(false); 
             }
