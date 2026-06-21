@@ -17112,6 +17112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoliciaIA
   jugador: {fileID: 829945181}
+  musicaFondo: {fileID: 1349308692}
+  sonidoMotor: {fileID: 213039702}
   velocidadMaxima: 15
   velocidadGiro: 4
   distanciaFrenado: 4
@@ -145382,6 +145384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b4f00724d7944429de3184bda6977a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  musicaFondo: {fileID: 213039702}
+  sonidoMotor: {fileID: 1349308692}
 --- !u!1001 &2094729862
 PrefabInstance:
   m_ObjectHideFlags: 0

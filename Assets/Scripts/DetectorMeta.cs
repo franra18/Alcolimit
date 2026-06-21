@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class DetectorMeta : MonoBehaviour
 {
+    [Header("Referencias Audio")]
+    public AudioSource musicaFondo;
+    public AudioSource sonidoMotor; // Nueva referencia para el sonido del motor
+
     private GeneradorRutas gestorRutas;
     private bool victoriaRegistrada = false; // Bloqueo para que solo cuente una vez
 
@@ -23,8 +27,20 @@ public class DetectorMeta : MonoBehaviour
         {
             victoriaRegistrada = true; // Activamos el bloqueo
 
-            Debug.Log($"🏆 ¡Victoria! El cilindro detectó la pieza '{other.gameObject.name}' del camión.");
+            // Parar la música de fondo
+            if (musicaFondo != null && musicaFondo.isPlaying)
+            {
+                musicaFondo.Stop();
+            }
 
+            // Parar el sonido del motor
+            if (sonidoMotor != null && sonidoMotor.isPlaying)
+            {
+                sonidoMotor.Stop();
+            }
+
+            Debug.Log($"🏆 ¡Victoria! El cilindro detectó la pieza '{other.gameObject.name}' del camión.");
+            
             // Sumar 1 al contador de victorias y guardar
             int victoriasActuales = PlayerPrefs.GetInt("Victorias", 0);
             victoriasActuales++;

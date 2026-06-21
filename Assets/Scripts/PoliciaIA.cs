@@ -10,6 +10,10 @@ public class PoliciaIA : MonoBehaviour
     [Header("Referencias")]
     public Transform jugador; 
 
+    [Header("Referencias Audio")]
+    public AudioSource musicaFondo;
+    public AudioSource sonidoMotor;
+
     [Header("Configuración de Conducción")]
     public float velocidadMaxima = 18f;
     public float velocidadGiro = 4f;
@@ -51,9 +55,9 @@ public class PoliciaIA : MonoBehaviour
     void Start()
     {
         if (panelGameOver != null)
-    {
-        panelGameOver.SetActive(false);
-    }
+        {
+            panelGameOver.SetActive(false);
+        }
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
 
@@ -62,6 +66,7 @@ public class PoliciaIA : MonoBehaviour
 
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         rb.linearDamping = 1f; 
+        
         // Le pasamos nuestro propio Transform al radar de la policía
         if (indicadorRadarPolicia != null)
         {
@@ -70,22 +75,21 @@ public class PoliciaIA : MonoBehaviour
 
         NavMeshAgent agente = GetComponent<NavMeshAgent>();
 
-    // Obligamos al agente a obedecer las variables de nuestro script
-    if (agente != null)
-    {
-        agente.speed = velocidadMaxima;
-        agente.angularSpeed = velocidadGiro;
-        agente.stoppingDistance = distanciaFrenado;
-    }
+        // Obligamos al agente a obedecer las variables de nuestro script
+        if (agente != null)
+        {
+            agente.speed = velocidadMaxima;
+            agente.angularSpeed = velocidadGiro;
+            agente.stoppingDistance = distanciaFrenado;
+        }
     }
 
-void FixedUpdate()
+    void FixedUpdate()
     {
         if (jugador == null || juegoTerminado) return; // Si el juego terminó, la IA deja de pensar
 
         // 1. Calculamos la distancia SIEMPRE al principio del todo (antes de movernos)
         float distanciaAlJugador = Vector3.Distance(transform.position, jugador.position);
-        //: {distanciaAlJugador:F1} metros");
 
         // 2. Comprobamos la condición de Derrota
         ComprobarArresto(distanciaAlJugador);
@@ -189,7 +193,6 @@ void FixedUpdate()
         // 2. Giramos el volante mientras vamos marcha atrás para desenganchar el parachoques de la pared
         // Girar sobre el eje Y un poco en cada frame simula el giro de las ruedas
         transform.Rotate(Vector3.up * 50f * Time.fixedDeltaTime);
-        
     }
 
     void Frenar()
@@ -198,15 +201,13 @@ void FixedUpdate()
     }
 
     void MitigarVelocidadLateral()
-{
-    Vector3 velocidadLocal = transform.InverseTransformDirection(rb.linearVelocity);
+    {
+        Vector3 velocidadLocal = transform.InverseTransformDirection(rb.linearVelocity);
+        velocidadLocal.x *= 0.1f; 
+        rb.linearVelocity = transform.TransformDirection(velocidadLocal);
+    }
 
-    velocidadLocal.x *= 0.1f; 
-
-    rb.linearVelocity = transform.TransformDirection(velocidadLocal);
-}
-
-void ComprobarArresto(float distanciaAlJugador)
+    void ComprobarArresto(float distanciaAlJugador)
     {
         if (juegoTerminado) return;
 
@@ -226,6 +227,19 @@ void ComprobarArresto(float distanciaAlJugador)
             if (cronometroCaptura >= tiempoParaCaptura)
             {
                 juegoTerminado = true;
+
+                // Parar la música de fondo al ser arrestado
+                if (musicaFondo != null && musicaFondo.isPlaying)
+                {
+                    musicaFondo.Stop();
+                }
+
+                // Parar el sonido del motor al ser arrestado
+                if (sonidoMotor != null && sonidoMotor.isPlaying)
+                {
+                    sonidoMotor.Stop();
+                }
+
                 Time.timeScale = 0f; 
                 
                 if (panelGameOver != null)
