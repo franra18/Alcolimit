@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 64b0353c78f90494db13ca1bd8b4fb6b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - SUN_OFF
   m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -52,15 +53,15 @@ Material:
     - _Exposure: 1
     - _MoonHalo: 1
     - _MoonSize: 0.75
-    - _StarsExtinction: 2
+    - _StarsExtinction: 10
     - _StarsTwinklingSpeed: 10
     - _SunHalo: 1
     - _SunSize: 0.75
     - _TopExponent: 1
     m_Colors:
     - _BottomColor: {r: 0.016868481, g: 0, b: 0.47794116, a: 1}
-    - _CloudsTint: {r: 0.50799215, g: 0.48885787, b: 0.7656204, a: 1}
-    - _MiddleColor: {r: 1, g: 0.61764705, b: 0.9578093, a: 1}
+    - _CloudsTint: {r: 0.7586139, g: 0.74875396, b: 0.8867924, a: 1}
+    - _MiddleColor: {r: 0.11776837, g: 0.107689574, b: 0.41509432, a: 1}
     - _MoonTint: {r: 0.491, g: 0.53774476, b: 1, a: 1}
     - _SkyBottomColor: {r: 0.016868481, g: 0, b: 0.47794116, a: 0}
     - _SkyColor: {r: 0.03529412, g: 0.41960788, b: 0.59607846, a: 1}
@@ -71,6 +72,6 @@ Material:
     - _SkyTopColor: {r: 0.2794118, g: 0.6421905, b: 1, a: 0}
     - _StarsTint: {r: 1, g: 1, b: 1, a: 1}
     - _SunTint: {r: 0.703, g: 0.55044055, b: 0.366966, a: 1}
-    - _TopColor: {r: 0.2794118, g: 0.6421905, b: 1, a: 1}
+    - _TopColor: {r: 0.24608402, g: 0.45548224, b: 0.6603774, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
